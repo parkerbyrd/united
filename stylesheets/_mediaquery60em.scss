@@ -1,0 +1,95 @@
+@media screen and (min-width:50em){
+
+
+.login {
+	display: block;
+	padding: 40px;
+	float: right;
+	li {
+		display: inline-block;
+		margin-right: 3px;
+		a {
+		text-decoration: none;
+		color: $primary-blue;
+		&:hover {
+			color: $light-blue;
+		}
+	}
+
+
+	}
+}	
+
+.main-content {
+	background-image: url('../images/big.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 500px;
+	padding-top: 30px;
+	padding-left: 2.5%;
+
+	li {
+		width: 20%;
+		display: inline-block;
+		margin-right: 5%;
+		@include box-shadow;
+		&:nth-of-type(4) {
+			margin-right:0;
+		}
+	}
+
+}
+.small-header {
+	background-image: none;
+	min-height: 100px;
+	#toplogo {
+		margin-bottom: 30px;
+		padding-top: 20px;
+	}
+}
+.top-nav {
+	width: 100%;
+	a {
+		float: left;
+		background-color: $primary-blue;
+		width: 20%;
+		height: 30px;
+		text-align: center;
+		border:1px solid black;
+		color: white;
+		padding-top: 5px;
+		text-decoration: none;
+	}
+}
+
+
+.photo-wrap {
+	div {
+		width: 30%;
+		margin: 24px 1.666666%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

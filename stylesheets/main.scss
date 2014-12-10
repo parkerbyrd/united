@@ -1,0 +1,135 @@
+@import "reset";
+@import "typography";
+
+$bg-main: #ffffff;
+$main-gray: #d4d4d0;
+$platinum-gray: #7c848a;
+$primary-text: #000000;
+$primary-blue: #003399;
+$mileage-plus: #edb72b;
+$light-blue: #62a9e3;
+$dark-blue: #002244;
+
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin header-font($font-size, $font-weight) {
+	font-family: lato, "Helvetica Neue", sans-serif;
+	font-size: $font-size;
+	font-weight: $font-weight;
+}
+@mixin button-grad {
+	background: #003399; /* Old browsers */
+background: -moz-linear-gradient(top,  #003399 1%, #50a4e5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#003399), color-stop(100%,#50a4e5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #003399 1%,#50a4e5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #003399 1%,#50a4e5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #003399 1%,#50a4e5 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #003399 1%,#50a4e5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003399', endColorstr='#50a4e5',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin box-shadow {
+	-webkit-box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    4px 4px 13px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         4px 4px 13px 0px rgba(50, 50, 50, 0.75);
+}
+
+
+
+
+//global standards////
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+img {
+	max-width:100%;
+}
+
+
+  	
+  
+.small-header {
+	background-image: url('../images/newyorkskyline.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height:400px;
+}
+
+
+
+
+.container {
+	max-width:1024px;
+	margin: 0 auto;
+}
+
+
+
+	
+
+
+
+///navigations//
+#toplogo {
+	width: 40%;
+}
+
+.login {
+	display: none
+}
+.nav-toggle{
+	background-image: url('../images/hamburger.png');
+  	background-size: 100px 100px;
+  	float:right;
+  	}
+
+.main-content {
+	max-width:100%;
+	li {
+		// @include button-grad;
+
+		background-color: $primary-blue;
+		width: 100%;
+		height: 50px;
+		text-align: center;
+		border:1px solid black;
+		color: white;
+		padding-top: 10px;
+	}
+}
+.photo-wrap {
+	display: none;
+
+}
+
+footer {
+	clear: both;
+	width: 100%;
+	min-height: 80px;
+	background-color: $light-blue;
+	img{
+		width: 40%;
+		padding: 20px;
+	}
+	.contents {
+		display: none;
+
+	}
+}
+
+@import "mediaquery38em";
+@import "mediaquery60em";
+
+
