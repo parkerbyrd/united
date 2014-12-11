@@ -147,8 +147,23 @@ img {
 		color: white;
 		padding-top: 6px;
 		text-align: left;
+		img {
+			height: 18px;
+			width: 18px;
+			float: right;
+			position: relative;
+			right: 0px;
+			bottom: 20px;
+			transition: 200ms;		
+		}
 	}
 
+}
+.btn-selected {
+	img {
+		transform: rotate(180deg);
+		transition: 200ms
+	}
 }
 .photo-wrap {
 	display: none;
@@ -193,6 +208,15 @@ footer {
 		label {
 			display:inline-block;
 		}
+	}
+}
+.advanced-flight {
+
+	legend {
+		width:100%;
+		line-height: 1.9;
+		background-color: $dark-blue;
+		color: white;
 	}
 }
 

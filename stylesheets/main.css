@@ -76,6 +76,12 @@ footer h3 {
 footer li {
   font-size: .8em; }
 
+.advanced-flight {
+  line-height: 2;
+  font-size: .9em; }
+  .advanced-flight h2 {
+    font-size: 1.8em; }
+
 html {
   box-sizing: border-box; }
 
@@ -141,6 +147,18 @@ img {
     color: white;
     padding-top: 6px;
     text-align: left; }
+    .main-content .dropdown img {
+      height: 18px;
+      width: 18px;
+      float: right;
+      position: relative;
+      right: 0px;
+      bottom: 20px;
+      transition: 200ms; }
+
+.btn-selected img {
+  transform: rotate(180deg);
+  transition: 200ms; }
 
 .photo-wrap {
   display: none; }
@@ -169,6 +187,12 @@ footer {
     display: inline-block; }
   .form-1 #people label, .form-2 #people label, .form-3 #people label, .form-4 #people label {
     display: inline-block; }
+
+.advanced-flight legend {
+  width: 100%;
+  line-height: 1.9;
+  background-color: #002244;
+  color: white; }
 
 @media screen and (min-width: 32em) {
   #toplogo {
@@ -233,6 +257,8 @@ footer {
         position: absolute;
         top: 10px;
         left: 38px; }
+      .main-content .dropdown img {
+        display: none; }
     .main-content .button-1 {
       position: absolute;
       top: 20px;
