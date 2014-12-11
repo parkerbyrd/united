@@ -108,16 +108,19 @@ img {
 
 .main-content {
 	max-width:100%;
-	li, h3 {
+	.dropdown {
 		// @include button-grad;
-
+		
 		background-color: $primary-blue;
 		width: 100%;
 		height: 50px;
 		padding-left: 10px;
 		border:1px solid black;
 		color: white;
-		padding-top: 10px;
+		padding-top: 6px;
+	}
+	form {
+		padding: 10px;
 	}
 }
 .photo-wrap {
@@ -139,6 +142,22 @@ footer {
 
 	}
 }
+
+
+
+///forms
+
+
+form {
+	display: none;
+	background-color: $primary-blue;
+	color: $bg-main;
+	width: 50%;
+	fieldset {
+		margin-top: 8px;
+	}
+}
+
 
 @import "mediaquery38em";
 @import "mediaquery60em";

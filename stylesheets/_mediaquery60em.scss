@@ -27,19 +27,68 @@
 	min-height: 500px;
 	padding-top: 30px;
 	padding-left: 2.5%;
+	position: relative;
 
-	li, h3 {
+	.dropdown {
+		
 		width: 20%;
 		display: inline-block;
-		margin-right: 5%;
+		
 		text-align: center;
-		padding-left: 0;
-		@include box-shadow;
-		&:nth-of-type(4) {
-			margin-right:0;
-		}
+		
+	
+		
 	}
+	.button-1 {
+		position: absolute;
+		top:20px;
+		left:2.5%;
+		@include box-shadow;
 
+	}
+	.button-2 {
+		position: absolute;
+		top:20px;
+		left:27.5%;
+		@include box-shadow;
+
+	}
+	.button-3 {
+		position: absolute;
+		top:20px;
+		left:52.5%;
+		@include box-shadow;
+
+	}
+	.button-4 {
+		position: absolute;
+		top:20px;
+		left:77.5%;
+		@include box-shadow;
+
+	}
+	.form-1 {
+		position: absolute;
+		left:2.5%;
+		top:90px;
+		width: 50%
+	}
+	.form-2 {
+		position: absolute;
+		left: 27.5%;
+		top: 90px;
+		width: 30%;
+	}
+	.form-3 {
+		position: absolute;
+		left:52.5%;
+		top:90px;
+		width: 40%;
+	}
+	.btn-selected {
+		height: 70px;
+		transition-duration: 200ms;
+	}	
 }
 .small-header {
 	background-image: none;
