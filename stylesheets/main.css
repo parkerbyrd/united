@@ -88,7 +88,7 @@ img {
 .small-header img {
   padding: 5px; }
 .small-header nav li {
-  background-color: #003399;
+  background-color: #002244;
   width: 100%;
   height: 40px;
   text-align: left;
@@ -133,7 +133,7 @@ img {
 .main-content {
   max-width: 100%; }
   .main-content .dropdown {
-    background-color: #003399;
+    background-color: #002244;
     width: 100%;
     height: 50px;
     padding-left: 10px;
@@ -158,7 +158,7 @@ footer {
 
 .form-1, .form-2, .form-3, .form-4 {
   display: none;
-  background-color: #003399;
+  background-color: #006ba6;
   color: #ffffff;
   padding: 10px; }
   .form-1 fieldset, .form-2 fieldset, .form-3 fieldset, .form-4 fieldset {
@@ -210,7 +210,7 @@ footer {
       margin-right: 3px; }
       .login li a {
         text-decoration: none;
-        color: #003399; }
+        color: #006ba6; }
         .login li a:hover {
           color: #62a9e3; }
 
@@ -287,7 +287,7 @@ footer {
       width: 100%; }
       .small-header nav li {
         float: left;
-        background-color: #003399;
+        background-color: #006ba6;
         width: 20%;
         height: 30px;
         text-align: center;
