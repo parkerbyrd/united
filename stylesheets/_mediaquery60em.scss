@@ -103,10 +103,10 @@
 		margin-bottom: 30px;
 		padding-top: 20px;
 	}
-}
-.top-nav {
+
+nav {
 	width: 100%;
-	a {
+	li {
 		float: left;
 		background-color: $primary-blue;
 		width: 20%;
@@ -118,7 +118,7 @@
 		text-decoration: none;
 	}
 }
-
+}
 
 .photo-wrap {
 	div {
