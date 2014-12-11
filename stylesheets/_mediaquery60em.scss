@@ -76,6 +76,9 @@
 		@include box-shadow;
 
 	}
+	form {
+		@include box-shadow;
+	}
 	.form-1 {
 		position: absolute;
 		left:2.5%;
@@ -117,7 +120,7 @@ nav {
 	width: 100%;
 	li {
 		float: left;
-		background-color: $dark-blue;
+		background: $dark-blue;
 		width: 20%;
 		height: 30px;
 		text-align: center;

@@ -94,7 +94,22 @@ img {
 .small-header img {
   padding: 5px; }
 .small-header nav li {
-  background-color: #002244;
+  background: #003399;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #003399 1%, #50a4e5 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #003399), color-stop(100%, #50a4e5));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #003399 1%, #50a4e5 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #003399 1%, #50a4e5 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #003399 1%, #50a4e5 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #002244 20%, #002255 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003399', endColorstr='#50a4e5',GradientType=0 );
+  /* IE6-9 */
   width: 100%;
   height: 40px;
   text-align: left;
@@ -302,6 +317,10 @@ footer {
       -webkit-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
       -moz-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
       box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75); }
+    .main-content form {
+      -webkit-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+      box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75); }
     .main-content .form-1 {
       position: absolute;
       left: 2.5%;
@@ -335,7 +354,7 @@ footer {
       width: 100%; }
       .small-header nav li {
         float: left;
-        background-color: #002244;
+        background: #002244;
         width: 20%;
         height: 30px;
         text-align: center;
