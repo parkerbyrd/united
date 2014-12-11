@@ -36,9 +36,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003399', end
 }
 
 @mixin box-shadow {
-	-webkit-box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.75);
--moz-box-shadow:    4px 4px 13px 0px rgba(50, 50, 50, 0.75);
-box-shadow:         4px 4px 13px 0px rgba(50, 50, 50, 0.75);
+	-webkit-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
 }
 
 
@@ -177,7 +177,7 @@ footer {
 
 .form-1, .form-2, .form-3, .form-4 {
 	display: none;
-	background-color: $primary-blue;
+	background-color: $dark-blue;
 	color: $bg-main;
 	padding: 10px;
 	fieldset {

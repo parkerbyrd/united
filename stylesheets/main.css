@@ -158,7 +158,7 @@ footer {
 
 .form-1, .form-2, .form-3, .form-4 {
   display: none;
-  background-color: #006ba6;
+  background-color: #002244;
   color: #ffffff;
   padding: 10px; }
   .form-1 fieldset, .form-2 fieldset, .form-3 fieldset, .form-4 fieldset {
@@ -225,35 +225,42 @@ footer {
     .main-content .dropdown {
       width: 20%;
       display: inline-block;
+      border: 0;
       text-align: center; }
+      .main-content .dropdown:focus {
+        outline: none; }
+      .main-content .dropdown h3 {
+        position: absolute;
+        top: 10px;
+        left: 38px; }
     .main-content .button-1 {
       position: absolute;
       top: 20px;
       left: 2.5%;
-      -webkit-box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.75);
-      -moz-box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.75);
-      box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.75); }
+      -webkit-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+      box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75); }
     .main-content .button-2 {
       position: absolute;
       top: 20px;
       left: 27.5%;
-      -webkit-box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.75);
-      -moz-box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.75);
-      box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.75); }
+      -webkit-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+      box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75); }
     .main-content .button-3 {
       position: absolute;
       top: 20px;
       left: 52.5%;
-      -webkit-box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.75);
-      -moz-box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.75);
-      box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.75); }
+      -webkit-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+      box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75); }
     .main-content .button-4 {
       position: absolute;
       top: 20px;
       left: 77.5%;
-      -webkit-box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.75);
-      -moz-box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.75);
-      box-shadow: 4px 4px 13px 0px rgba(50, 50, 50, 0.75); }
+      -webkit-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+      box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75); }
     .main-content .form-1 {
       position: absolute;
       left: 2.5%;
@@ -287,7 +294,7 @@ footer {
       width: 100%; }
       .small-header nav li {
         float: left;
-        background-color: #006ba6;
+        background-color: #002244;
         width: 20%;
         height: 30px;
         text-align: center;
