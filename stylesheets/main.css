@@ -41,7 +41,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-h1, h2, h3, h4, h5, h6, p, li, a, form {
+h1, h2, h3, h4, h5, h6, p, li, a, form, button {
   font-family: "lato",sans-serif; }
 
 .top-nav {
@@ -85,6 +85,8 @@ html {
 img {
   max-width: 100%; }
 
+.small-header img {
+  padding: 5px; }
 .small-header nav li {
   background-color: #003399;
   width: 100%;
@@ -154,18 +156,18 @@ footer {
   footer .contents {
     display: none; }
 
-form {
+.form-1, .form-2, .form-3, .form-4 {
   display: none;
   background-color: #003399;
   color: #ffffff;
   padding: 10px; }
-  form fieldset {
+  .form-1 fieldset, .form-2 fieldset, .form-3 fieldset, .form-4 fieldset {
     margin-top: 8px; }
-  form label {
+  .form-1 label, .form-2 label, .form-3 label, .form-4 label {
     display: block; }
-  form input {
+  .form-1 input, .form-2 input, .form-3 input, .form-4 input {
     display: inline-block; }
-  form #people label {
+  .form-1 #people label, .form-2 #people label, .form-3 #people label, .form-4 #people label {
     display: inline-block; }
 
 @media screen and (min-width: 32em) {
@@ -273,8 +275,7 @@ form {
       top: 90px;
       width: 40%; }
     .main-content .btn-selected {
-      height: 70px;
-      transition-duration: 200ms; }
+      height: 70px; }
 
   .small-header {
     background-image: none;

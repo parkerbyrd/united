@@ -66,6 +66,9 @@ img {
 	// background-size:cover;
 
 	// min-height:400px;
+	img {
+		padding: 5px;
+	}
 	nav{
 	li {
 		
@@ -91,6 +94,7 @@ img {
 	background-size:cover;
 	min-height:400px;
 	width: 100%;
+	
 }
 
 
@@ -171,7 +175,7 @@ footer {
 ///forms
 
 
-form {
+.form-1, .form-2, .form-3, .form-4 {
 	display: none;
 	background-color: $primary-blue;
 	color: $bg-main;
