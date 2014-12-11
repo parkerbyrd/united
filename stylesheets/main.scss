@@ -85,20 +85,30 @@ img {
 ///navigations//
 #toplogo {
 	width: 40%;
+	margin-top: 5px;
+	margin-left: 5px;
 }
 
 .login {
 	display: none
 }
+.top-nav {
+	width: 100%;
+	
+}
 .nav-toggle{
+	width: 40px;
+	height: 40px;
 	background-image: url('../images/hamburger.png');
-  	background-size: 100px 100px;
+  	background-size: cover;
   	float:right;
+  	margin-right: 5px;
+  	margin-top: 5px;
   	}
 
 .main-content {
 	max-width:100%;
-	li {
+	li, h3 {
 		// @include button-grad;
 
 		background-color: $primary-blue;

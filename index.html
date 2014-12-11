@@ -31,12 +31,26 @@
 	</nav>
 </div>
 	<div class="main-content">
-		<ul>
-			<li>Book a Trip</li>
+		
+			<div class="dropdown booktrip">
+				<h3>Book a Trip</h3>
+				<form action="#">
+					<fieldset>
+					<input type="radio" name="Trip" value="Round-Trip"> Round-Trip
+					<input type="radio" name="Trip" value="One-way"> One-Way
+					</fieldset>
+					<fieldset>
+						<label for="from">From</label>
+						<input type="text" name="from" id="from">
+						<label for="to">To</label>
+						<input type="text" name="to" id="to">
+					</fieldset>
+				</form>
+			</div>
 			<li>Flight Check-in</li>
 			<li>Reservations</li>
 			<li>Flight Status</li>
-		</ul>
+		
 	</div>
 	<div class="photo-wrap">
 		<div>
