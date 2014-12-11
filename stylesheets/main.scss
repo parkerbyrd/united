@@ -31,7 +31,7 @@ background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#00339
 background: -webkit-linear-gradient(top,  #003399 1%,#50a4e5 100%); /* Chrome10+,Safari5.1+ */
 background: -o-linear-gradient(top,  #003399 1%,#50a4e5 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top,  #003399 1%,#50a4e5 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #003399 1%,#50a4e5 100%); /* W3C */
+background: linear-gradient(to bottom,  #002244 20%,#002255 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003399', endColorstr='#50a4e5',GradientType=0 ); /* IE6-9 */
 }
 
@@ -137,9 +137,9 @@ img {
 .main-content {
 	max-width:100%;
 	.dropdown {
-		// @include button-grad;
+		@include button-grad;
 		
-		background-color: $dark-blue;
+		// background-color: $dark-blue;
 		width: 100%;
 		height: 50px;
 		padding-left: 10px;
@@ -147,6 +147,9 @@ img {
 		color: white;
 		padding-top: 6px;
 		text-align: left;
+		&:focus {
+			outline: none;
+		}
 		img {
 			height: 18px;
 			width: 18px;
@@ -158,12 +161,15 @@ img {
 		}
 	}
 
-}
+
 .btn-selected {
+		
+	
 	img {
 		transform: rotate(180deg);
 		transition: 200ms
 	}
+}
 }
 .photo-wrap {
 	display: none;

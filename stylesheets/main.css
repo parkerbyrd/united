@@ -139,7 +139,22 @@ img {
 .main-content {
   max-width: 100%; }
   .main-content .dropdown {
-    background-color: #002244;
+    background: #003399;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #003399 1%, #50a4e5 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #003399), color-stop(100%, #50a4e5));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #003399 1%, #50a4e5 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #003399 1%, #50a4e5 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #003399 1%, #50a4e5 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #002244 20%, #002255 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003399', endColorstr='#50a4e5',GradientType=0 );
+    /* IE6-9 */
     width: 100%;
     height: 50px;
     padding-left: 10px;
@@ -147,6 +162,8 @@ img {
     color: white;
     padding-top: 6px;
     text-align: left; }
+    .main-content .dropdown:focus {
+      outline: none; }
     .main-content .dropdown img {
       height: 18px;
       width: 18px;
@@ -155,10 +172,9 @@ img {
       right: 0px;
       bottom: 20px;
       transition: 200ms; }
-
-.btn-selected img {
-  transform: rotate(180deg);
-  transition: 200ms; }
+  .main-content .btn-selected img {
+    transform: rotate(180deg);
+    transition: 200ms; }
 
 .photo-wrap {
   display: none; }
@@ -250,13 +266,12 @@ footer {
       width: 20%;
       display: inline-block;
       border: 0;
-      text-align: center; }
-      .main-content .dropdown:focus {
-        outline: none; }
+      text-align: center;
+      background: #002244; }
       .main-content .dropdown h3 {
         position: absolute;
         top: 10px;
-        left: 38px; }
+        left: 36px; }
       .main-content .dropdown img {
         display: none; }
     .main-content .button-1 {

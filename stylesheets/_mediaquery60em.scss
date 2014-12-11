@@ -35,13 +35,12 @@
 		display: inline-block;
 		border:0;
 		text-align: center;
-		&:focus {
-			outline: none;
-		}
+		background: $dark-blue;
+
 		h3 {
 			position: absolute;
 			top: 10px;
-			left: 38px;
+			left: 36px;
 		}
 		img {
 			display: none;
