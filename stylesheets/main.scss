@@ -119,9 +119,7 @@ img {
 		color: white;
 		padding-top: 6px;
 	}
-	form {
-		padding: 10px;
-	}
+
 }
 .photo-wrap {
 	display: none;
@@ -152,9 +150,20 @@ form {
 	display: none;
 	background-color: $primary-blue;
 	color: $bg-main;
-	width: 50%;
+	padding: 10px;
 	fieldset {
 		margin-top: 8px;
+	}
+	label {
+		display: block;
+	}
+	input {
+		display: inline-block;
+	}
+	#people {
+		label {
+			display:inline-block;
+		}
 	}
 }
 

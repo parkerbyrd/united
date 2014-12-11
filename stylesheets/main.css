@@ -65,6 +65,9 @@ h1, h2, h3, h4, h5, h6, p, li, a, form {
 .login li {
   font-size: .8em; }
 
+form {
+  font-size: .8em; }
+
 footer h3 {
   font-size: 1.2em;
   font-weight: 300; }
@@ -120,8 +123,6 @@ img {
     border: 1px solid black;
     color: white;
     padding-top: 6px; }
-  .main-content form {
-    padding: 10px; }
 
 .photo-wrap {
   display: none; }
@@ -141,9 +142,15 @@ form {
   display: none;
   background-color: #003399;
   color: #ffffff;
-  width: 50%; }
+  padding: 10px; }
   form fieldset {
     margin-top: 8px; }
+  form label {
+    display: block; }
+  form input {
+    display: inline-block; }
+  form #people label {
+    display: inline-block; }
 
 @media screen and (min-width: 32em) {
   #toplogo {
@@ -242,6 +249,11 @@ form {
     .main-content .form-3 {
       position: absolute;
       left: 52.5%;
+      top: 90px;
+      width: 40%; }
+    .main-content .form-4 {
+      position: absolute;
+      right: 2.5%;
       top: 90px;
       width: 40%; }
     .main-content .btn-selected {

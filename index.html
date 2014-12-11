@@ -37,12 +37,11 @@
 				</button>
 					<form action="#" class="form-1">
 						<fieldset>
-							<label>
+							
 								<input type="radio" name="Trip" value="Round-Trip"> Round-Trip
-							</label>
-							<label>
+							
 								<input type="radio" name="Trip" value="One-way"> One-Way
-							</label>
+							
 						</fieldset>
 						<fieldset>
 							<label for="from">From</label>
@@ -87,7 +86,7 @@
 								<option value="Night">Night</option>
 							</select>
 						</fieldset>
-						<fieldset>
+						<fieldset id="people">
 							<label for="adults">Adults</label>
 							<select id="adults">
 								<option value="1" selected>1</option>
@@ -103,7 +102,7 @@
 								<option value="3">3</option>
 								<option value="4">4</option>
 								<option value="5">5</option>
-							</select>
+							</select><br>
 							<label for="offer">Offer Code (optional)</label>
 							<input type="text" name="offer" id="offer">
 						</fieldset>
@@ -165,11 +164,33 @@
 					<label for="lastname"> Last Name</label>
 					<input type="text" id="lastname">
 				</fieldset>
+				<fieldset>
+					<input type="submit" name="search" value="Search">
+				</fieldset>
 			</form>
 			<button class="dropdown button-4">
-				<h3>Flight Status</h3>
-				
+				<h3>Flight Status</h3>	
 			</button>
+			<form action="#" class="form-4">
+				<fieldset>
+					<label for="flightnumber">Flight Number:</label>
+					<input type="text" id="flightnumber">
+					<label for="depart"></label>
+					<select name="depart" id="depart">
+								<option value="dec17" selected>Wed. December 17</option>
+								<option value="dec18">Thu. December 18</option>
+								<option value="dec19">Fri. December 19</option>
+							</select>
+				</fieldset>
+				<fieldset>
+					<p>Don't know the flight number?</p>
+					<label align="top" for="from">City or Airport</label>
+					<input type="text" id="from" placeholder="From">
+					<label for="to">City or Airport</label>
+					<input type="text" id="to" placeholder="To">
+					<input type="submit" name="search" value="Check Status">
+				</fieldset>
+			</form>
 		</div>
 			<div class="photo-wrap">
 				<div>
