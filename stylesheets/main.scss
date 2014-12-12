@@ -266,7 +266,10 @@ footer {
 		}
 	}
 }
-
+.bg-full {
+	
+	@include sky-gradient;
+}
 /////mileageplus
 
 .big-bg {

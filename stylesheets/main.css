@@ -276,6 +276,24 @@ footer {
   .advanced-people div select {
     display: block; }
 
+.bg-full {
+  background: #a0cef0;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #a0cef0 25%, #006ba6 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #a0cef0), color-stop(100%, #006ba6));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #a0cef0 25%, #006ba6 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #a0cef0 25%, #006ba6 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #a0cef0 25%, #006ba6 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #a0cef0 25%, #006ba6 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0cef0', endColorstr='#006ba6',GradientType=0 );
+  /* IE6-9 */ }
+
 .big-bg {
   background-image: url("../images/airplane-2.jpg");
   background-size: cover;
