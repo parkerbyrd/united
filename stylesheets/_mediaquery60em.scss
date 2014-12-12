@@ -158,11 +158,18 @@ nav {
 
 
 ////mileage plus
+
 .copy-left {
 	width: 50%;
-	float:left;
-	overflow: hidden;
-	// background-color: $sky-blue;
+	float: left;
+	padding: 0 12px;
+	
+	
+}
+.copy-right {
+	width: 50%;
+	float: left;
+	padding: 0 12px;
 }
 
 

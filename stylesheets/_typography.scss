@@ -87,6 +87,8 @@ h2 {
 }
 
 .mileage-content {
+	line-height: 1.5;
+
 	h3 {
 		padding-top: 10px;
 		font-size: 2em;
@@ -96,6 +98,13 @@ h2 {
 	h4 {
 		font-size: 1.6em;
 		font-weight: 300;
+	}
+	a{
+		font-size: .6em;
+		line-height: 1.4;
+	}
+	p {
+		font-size: .9em;
 	}
 }
 

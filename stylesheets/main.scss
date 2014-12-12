@@ -42,7 +42,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003399', end
 box-shadow:         -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
 }
 
+@mixin sky-gradient {
+	background: #a0cef0; /* Old browsers */
+background: -moz-linear-gradient(top,  #a0cef0 1%, #73bbef 58%, #002244 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#a0cef0), color-stop(58%,#73bbef), color-stop(100%,#002244)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #a0cef0 1%,#73bbef 58%,#002244 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #a0cef0 1%,#73bbef 58%,#002244 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #a0cef0 1%,#73bbef 58%,#002244 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #a0cef0 1%,#73bbef 58%,#002244 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0cef0', endColorstr='#002244',GradientType=0 ); /* IE6-9 */
 
+}
 
 
 //global standards////
@@ -268,13 +278,29 @@ footer {
 .mileage-header {
 	margin: 0 auto;
 	width: 100%;
-	padding-top: 100px;
+	padding-top: 150px;
 
 }
 .mileage-content {
+
+	padding-top: 50px;
 	width: 100%;
 	overflow: hidden;
-	background-color: $sky-blue;
+	@include sky-gradient;
+	// background-color: $sky-blue;
+	section {
+		padding-bottom: 20px;
+	}
+	h3 {
+		padding-bottom: 20px;
+	}
+
+}
+.copy-left {
+	padding: 0 12px;
+}
+.copy-right {
+	padding: 0 12px;
 }
 
 @import "mediaquery38em";
