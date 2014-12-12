@@ -262,9 +262,19 @@ footer {
 .big-bg {
 	background-image: url('../images/airplane-2.jpg');
 	background-size: cover;
-	min-height: 600px;
+	min-height: 420px;
 
+}
+.mileage-header {
+	margin: 0 auto;
+	width: 100%;
+	padding-top: 100px;
 
+}
+.mileage-content {
+	width: 100%;
+	overflow: hidden;
+	background-color: $sky-blue;
 }
 
 @import "mediaquery38em";

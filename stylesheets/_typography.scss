@@ -70,8 +70,34 @@ h2 {
 }
 }
 
+.mileage-header {
+	h1 {
+		font-size: 3.5em;
+		font-weight: 300;
+		color: #002244;
+		text-align: center;
+	}
+	h3 {
+		padding-top: 10px;
+		font-size: 2em;
+		font-weight: 300;
+		color: #002244;
+		text-align: center;
+	}
+}
 
-
+.mileage-content {
+	h3 {
+		padding-top: 10px;
+		font-size: 2em;
+		font-weight: 300;
+		
+	}
+	h4 {
+		font-size: 1.6em;
+		font-weight: 300;
+	}
+}
 
 
 
