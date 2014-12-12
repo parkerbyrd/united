@@ -80,7 +80,9 @@ footer li {
   line-height: 2;
   font-size: .9em; }
   .advanced-flight h2 {
-    font-size: 1.8em; }
+    font-size: 2em;
+    padding-left: 10px;
+    padding-bottom: 20px; }
 
 html {
   box-sizing: border-box; }
@@ -121,14 +123,14 @@ img {
     text-decoration: none; }
 
 .small-bg {
-  background-image: url("../images/big.png");
+  background-image: url("../images/bg1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 400px;
   width: 100%; }
 
 .container {
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto; }
 
 #toplogo {
@@ -175,7 +177,7 @@ img {
     padding-left: 10px;
     border: 1px solid black;
     color: white;
-    padding-top: 6px;
+    padding-top: 13px;
     text-align: left; }
     .main-content .dropdown:focus {
       outline: none; }
@@ -219,11 +221,38 @@ footer {
   .form-1 #people label, .form-2 #people label, .form-3 #people label, .form-4 #people label {
     display: inline-block; }
 
-.advanced-flight legend {
-  width: 100%;
-  line-height: 1.9;
-  background-color: #002244;
-  color: white; }
+.advanced-flight {
+  padding-bottom: 20px; }
+  .advanced-flight legend {
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #002244;
+    color: white;
+    font-size: 1.2em; }
+  .advanced-flight fieldset {
+    padding: 10px; }
+
+.advanced-offer legend {
+  background-color: #62a9e3;
+  color: #002244; }
+
+.advanced-from, .advanced-to {
+  display: inline-block; }
+
+.advanced-to {
+  margin-left: 20px; }
+
+.advanced-people div {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 4%; }
+  .advanced-people div select {
+    display: block; }
+
+.big-bg {
+  background-image: url("../images/airplane-2.jpg");
+  background-size: cover;
+  min-height: 600px; }
 
 @media screen and (min-width: 32em) {
   #toplogo {
@@ -257,6 +286,7 @@ footer {
           line-height: 1.2; } }
 @media screen and (min-width: 50em) {
   .login {
+    clear: both;
     display: block;
     padding: 40px;
     float: right; }
@@ -270,7 +300,7 @@ footer {
           color: #62a9e3; }
 
   .main-content {
-    background-image: url("../images/big.png");
+    background-image: url("../images/bg1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 500px;
@@ -283,10 +313,10 @@ footer {
       border: 0;
       text-align: center;
       background: #002244; }
-      .main-content .dropdown h3 {
-        position: absolute;
-        top: 10px;
-        left: 36px; }
+      .main-content .dropdown h3, .main-content .dropdown a {
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 27px; }
       .main-content .dropdown img {
         display: none; }
     .main-content .button-1 {
@@ -342,7 +372,8 @@ footer {
       top: 90px;
       width: 40%; }
     .main-content .btn-selected {
-      height: 70px; }
+      height: 70px;
+      padding-bottom: 20px; }
 
   .small-header {
     background-image: none;
@@ -351,7 +382,8 @@ footer {
       margin-bottom: 30px;
       padding-top: 20px; }
     .small-header nav {
-      width: 100%; }
+      width: 65%;
+      float: right; }
       .small-header nav li {
         float: left;
         background: #002244;
@@ -361,11 +393,14 @@ footer {
         border: 1px solid black;
         color: white;
         padding-top: 5px;
-        text-decoration: none; }
+        text-decoration: none;
+        font-size: .8em; }
 
   .photo-wrap div {
     width: 30%;
     margin: 24px 1.666666%; }
+    .photo-wrap div img {
+      width: 100%; }
 
   .small-bg {
     display: none;

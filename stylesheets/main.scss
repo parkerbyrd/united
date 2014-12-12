@@ -9,6 +9,7 @@ $primary-blue: #006ba6;
 $mileage-plus: #edb72b;
 $light-blue: #62a9e3;
 $dark-blue: #002244;
+$sky-blue: #a0cef0;
 
 
 
@@ -89,7 +90,7 @@ img {
 }
 }
 .small-bg {
-	background-image: url('../images/big.png');
+	background-image: url('../images/bg1.jpg');
 	background-repeat: no-repeat;
 	background-size:cover;
 	min-height:400px;
@@ -100,7 +101,7 @@ img {
 
 
 .container {
-	max-width:1024px;
+	max-width:1200px;
 	margin: 0 auto;
 }
 
@@ -145,7 +146,7 @@ img {
 		padding-left: 10px;
 		border:1px solid black;
 		color: white;
-		padding-top: 6px;
+		padding-top: 13px;
 		text-align: left;
 		&:focus {
 			outline: none;
@@ -217,15 +218,54 @@ footer {
 	}
 }
 .advanced-flight {
-
+		
+		padding-bottom: 20px;
 	legend {
 		width:100%;
-		line-height: 1.9;
+		padding: 5px 10px;
 		background-color: $dark-blue;
 		color: white;
+		font-size: 1.2em;
+
+	}
+	fieldset {
+		padding: 10px;
+	}
+
+}
+.advanced-offer {
+	legend {
+	background-color: $light-blue;
+	color: $dark-blue;
+}
+}
+.advanced-from, .advanced-to {
+	display: inline-block;
+	
+}
+.advanced-to {
+	margin-left: 20px;
+}
+.advanced-people {
+	div {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 4%;
+		select {
+			display: block;
+		}
 	}
 }
 
+/////mileageplus
+
+.big-bg {
+	background-image: url('../images/airplane-2.jpg');
+	background-size: cover;
+	min-height: 600px;
+
+
+}
 
 @import "mediaquery38em";
 @import "mediaquery60em";

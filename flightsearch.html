@@ -21,7 +21,7 @@
 						<li><a href="index.html">Home</a></li>
 						<li><a href="flightsearch.html">Travel Information</a></li>
 						<li><a href="#">Specials</a></li>
-						<li><a href="#">MileagePlus</a></li>
+						<li><a href="mileageplus.html">MileagePlus</a></li>
 						<li><a href="#">Contact Us</a></li>
 					</ul>
 				</nav>
@@ -47,15 +47,49 @@
 						<fieldset>
 							<legend>Where and when do you plan to travel?</legend>
 							<p style="bold">Note: MileagePlus Premier members may receive better search results by <a href="mileageplus.html">signing in</a>.<br>
-
+						<div class="advanced-from">
 							<label for="from">From</label>
-							<input type="text" name="from" id="from">
+							<input type="text" name="from" id="from"><br>
+							<input type="checkbox" name="distance" value="distance" checked> Search Airports within 
+							<select name="day">
+  								<option value="25">25 miles</option>
+  								<option value="50">50 miles</option>
+  								<option value="75">75 miles</option>
+  								<option value="100">100 miles</option>
+  								<option value="125">125 miles</option>
+  								<option value="150" selected>150 miles</option>
+  								<option value="175">175 miles</option>
+  								<option value="200">200 miles</option>
+  								<option value="225">225 miles</option>
+  								<option value="250">250 miles</option>
+
+							</select>
+						</div>
+						<div class="advanced-to">
 							<label for="to">To</label>
-							<input type="text" name="to" id="to">
+							<input type="text" name="to" id="to"><br>
+							<input type="checkbox" name="distance" value="distance"> Search Airports within 
+							<select name="day">
+  								<option value="25">25 miles</option>
+  								<option value="50">50 miles</option>
+  								<option value="75">75 miles</option>
+  								<option value="100">100 miles</option>
+  								<option value="125">125 miles</option>
+  								<option value="150" selected>150 miles</option>
+  								<option value="175">175 miles</option>
+  								<option value="200">200 miles</option>
+  								<option value="225">225 miles</option>
+  								<option value="250">250 miles</option>
+
+							</select>
+						</div>
 						</fieldset>
 						<fieldset>
 							<label>
 								<input type="radio" name="dates" value="Exact Dates"> Search specific dates
+							</label>
+							<label>
+								<input type="radio" name="dates" value="lower fares"> Search for lower fares +/- 3 Days
 							</label>
 							<label>
 								<input type="radio" name="dates" value="Flexible Dates"> My dates are flexible
@@ -74,6 +108,12 @@
 								<option value="Evening">Evening</option>
 								<option value="Night">Night</option>
 								</select>
+								<label for="cabin">Depart Cabin:</label>
+							<select name="cabin" id="cabin">
+								<option value="economy" selected>Economy</option>
+								<option value="business">Business/BusinessFirst</option>
+								<option value="first">First/GlobalFirst</option>
+							</select>
 							</fieldset>
 							<fieldset>
 							
@@ -89,38 +129,108 @@
 								<option value="Evening">Evening</option>
 								<option value="Night">Night</option>
 							</select>
-						</fieldset>
-						<fieldset id="people">
-							<label for="adults">Adults</label>
-							<select id="adults">
-								<option value="1" selected>1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-							</select>
-							<label for="children">Children</label>
-							<select id="children">
-								<option value="1" selected>1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-							</select><br>
-						</fieldset>
-						<fieldset>
-							<label for="offer">Offer Code (optional)</label>
-							<input type="text" name="offer" id="offer">
-						</fieldset>
-						<fieldset>
-							<label for="cabin">Cabin</label>
+							<label for="cabin">Return Cabin:</label>
 							<select name="cabin" id="cabin">
-								<option value="eceonomy" selected>Economy</option>
+								<option value="economy" selected>Economy</option>
 								<option value="business">Business/BusinessFirst</option>
 								<option value="first">First/GlobalFirst</option>
 							</select>
 						</fieldset>
+
+						<fieldset id="people" class="advanced-people">
+							<legend>How many people are traveling with you?</legend>
+							<div class="advanced-adults">
+							<label for="adults">Adults (age 18 to 64):</label>
+							<select id="adults">
+								<option value="0">0</option>
+								<option value="1" selected>1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+							<label for="seniors">Seniors (age 65 and older):</label>
+							<select id="seniors">
+								<option value="0" selected>0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+						<div class="advanced-children">
+							<label for="children12">Children (age 12 to 17):</label>
+							<select id="children12">
+								<option value="0" selected>0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+							<label for="children5">Children (age 5 to 11):</label>
+							<select id="children5">
+								<option value="0" selected>0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+							<label for="children2">Children (age 2 to 4):</label>
+							<select id="children2">
+								<option value="0" selected>0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+						<div class="advanced-infant">
+							<label for="infant">Infant (under age 2) in a reserved seat**:</label>
+							<select id="infant">
+								<option value="0" selected>0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+							<label for="infant1">Infant (under age 2) in parent's lap**:</label>
+							<select id="infant1">
+								<option value="0" selected>0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+						</fieldset>
+						<fieldset class="advanced-fare">
+							<legend>What is your fare preference?</legend>
+							<label>Fare Type:</label><br>
+							<input type="radio" name="fare" value="lowest">Lowest Available Fare<br>
+							<input type="radio" name="fare" value="flexible">Flexible Fare<br>
+							<input type="radio" name="fare" value="unrestricted">Unrestricted Fare
+
+		
+
+						</fieldset>
+						<fieldset class="advanced-offer">
+							<legend>(Optional) Do you have any promotional offers to redeem?</legend>
+							<label for="offer">Offer Code (optional)</label>
+							<input type="text" name="offer" id="offer">
+						</fieldset>
+						
 						<fieldset>
+							<legend>How would you like your flight results displayed?</legend>
+							<input type="checkbox" name="display"> Nonstop flights only
+							<input type="checkbox" name="display"> United Airlines flights only
+							<input type="checkbox" name="display"> MileagePlus upgrade award
+
 							<label for="search">Search by:</label>
 							<select name="search" id="search">
 								<option value="price">Price</option>

@@ -2,6 +2,7 @@
 
 
 .login {
+	clear: both;
 	display: block;
 	padding: 40px;
 	float: right;
@@ -21,7 +22,7 @@
 }	
 
 .main-content {
-	background-image: url('../images/big.png');
+	background-image: url('../images/bg1.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 500px;
@@ -37,10 +38,13 @@
 		text-align: center;
 		background: $dark-blue;
 
-		h3 {
-			position: absolute;
-			top: 10px;
-			left: 36px;
+		h3 , a {
+			padding-left:0;
+			padding-top: 0;
+			padding-bottom: 27px;
+			// position: absolute;
+			// top: 10px;
+			// left: 20%;
 		}
 		img {
 			display: none;
@@ -105,7 +109,7 @@
 	}
 	.btn-selected {
 		height: 70px;
-		
+		padding-bottom: 20px;
 	}	
 }
 .small-header {
@@ -117,7 +121,8 @@
 	}
 
 nav {
-	width: 100%;
+	width: 65%;
+	float: right;
 	li {
 		float: left;
 		background: $dark-blue;
@@ -128,6 +133,7 @@ nav {
 		color: white;
 		padding-top: 5px;
 		text-decoration: none;
+		font-size: .8em;
 	}
 }
 }
@@ -136,6 +142,9 @@ nav {
 	div {
 		width: 30%;
 		margin: 24px 1.666666%;
+		img {
+			width: 100%;
+		}
 	}
 }
 
