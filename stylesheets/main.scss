@@ -261,11 +261,10 @@ footer {
 }
 .advanced-from, .advanced-to {
 	display: inline-block;
+	margin-right: 20px;
 	
 }
-.advanced-to {
-	margin-left: 20px;
-}
+
 .advanced-people {
 	div {
 		display: inline-block;
@@ -333,6 +332,54 @@ footer {
 }
 .copy-right {
 	padding: 0 12px;
+}
+
+/////contact 
+
+.faq {
+	
+	width: 100%;
+	line-height: 1.4;
+	p {
+		padding-left: 8px;
+	}
+}
+.top-ten {
+	width: 100%;
+	li {
+		line-height: 1.5;
+	}
+}
+
+
+.faq-header {
+	 
+
+
+	width: 100%;
+	height: 38px;
+	border: 1px solid black;
+	background: $primary-blue;
+	text-align: left;
+	h3 {
+		padding-left: 6px;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+.faq-p-1, .faq-p-2, .faq-p-3, .faq-p-4, .faq-p-5, .faq-p-6 {
+	display: none;
+	background: $dark-blue;
+	color: white;
+	padding: 12px;
+}
+
+.faq-1 {
+	border-radius: 8px 8px 0 0;
+}
+.faq-6 {
+	border-radius: 0 0 8px 8px;
 }
 
 @import "mediaquery38em";

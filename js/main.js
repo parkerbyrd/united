@@ -49,3 +49,60 @@ $('.form-3').hide();
 $('.form-4').toggle();
 console.log("button 4 clicked")
 })
+
+
+
+//// to show/hide contact info
+
+$('.faq-1').click(function(){
+	$('.faq-p-1').toggle();
+	$('.faq-p-2').hide();
+	$('.faq-p-3').hide();
+	$('.faq-p-4').hide();
+	$('.faq-p-5').hide();
+	$('.faq-p-6').hide();
+})
+
+$('.faq-2').click(function(){
+	$('.faq-p-1').hide();
+	$('.faq-p-2').toggle();
+	$('.faq-p-3').hide();
+	$('.faq-p-4').hide();
+	$('.faq-p-5').hide();
+	$('.faq-p-6').hide();
+})
+$('.faq-3').click(function(){
+	$('.faq-p-1').hide();
+	$('.faq-p-2').hide();
+	$('.faq-p-3').toggle();
+	$('.faq-p-4').hide();
+	$('.faq-p-5').hide();
+	$('.faq-p-6').hide();
+})
+$('.faq-4').click(function(){
+	$('.faq-p-1').hide();
+	$('.faq-p-2').hide();
+	$('.faq-p-3').hide();
+	$('.faq-p-4').toggle();
+	$('.faq-p-5').hide();
+	$('.faq-p-6').hide();
+})
+$('.faq-5').click(function(){
+	$('.faq-p-1').hide();
+	$('.faq-p-2').hide();
+	$('.faq-p-3').hide();
+	$('.faq-p-4').hide();
+	$('.faq-p-5').toggle();
+	$('.faq-p-6').hide();
+})
+$('.faq-6').click(function(){
+	$('.faq-p-1').hide();
+	$('.faq-p-2').hide();
+	$('.faq-p-3').hide();
+	$('.faq-p-4').hide();
+	$('.faq-p-5').hide();
+	$('.faq-p-6').toggle();
+})
+
+
+
