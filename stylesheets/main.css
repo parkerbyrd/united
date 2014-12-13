@@ -276,6 +276,35 @@ footer {
   .advanced-people div select {
     display: block; }
 
+.trip-button {
+  display: inline-block;
+  margin-right: 10px; }
+  .trip-button button {
+    width: 100px;
+    height: 100px;
+    background: #ffffff;
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #cecece 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffffff), color-stop(100%, #cecece));
+    /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #cecece 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #ffffff 0%, #cecece 100%);
+    /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%, #cecece 100%);
+    /* IE10+ */
+    background: radial-gradient(ellipse at center, #ffffff 0%, #cecece 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cecece',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+    border: none;
+    -webkit-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+    border-radius: 10px;
+    font-size: 1em; }
+
 .bg-full {
   background: #a0cef0;
   /* Old browsers */
@@ -328,6 +357,9 @@ footer {
     padding-bottom: 20px; }
   .mileage-content h3 {
     padding-bottom: 20px; }
+  .mileage-content a {
+    color: #edb72b;
+    text-decoration: none; }
 
 .copy-left {
   padding: 0 12px; }

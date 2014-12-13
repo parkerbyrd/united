@@ -53,7 +53,17 @@ background: linear-gradient(to bottom,  #a0cef0 25%,#006ba6 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0cef0', endColorstr='#006ba6',GradientType=0 ); /* IE6-9 */
 
 }
+@mixin gray-button {
+	background: #ffffff; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #cecece 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#cecece)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#cecece 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #ffffff 0%,#cecece 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #ffffff 0%,#cecece 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #ffffff 0%,#cecece 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cecece',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
+}
 
 //global standards////
 html {
@@ -266,6 +276,21 @@ footer {
 		}
 	}
 }
+.trip-button {
+	display: inline-block;
+	margin-right: 10px;
+	button {
+		width: 100px;
+		height: 100px;
+		@include gray-button;
+		border: none;
+		@include box-shadow;
+		border-radius: 10px;
+		font-size: 1em;
+
+
+	}
+}
 .bg-full {
 	
 	@include sky-gradient;
@@ -296,6 +321,10 @@ footer {
 	}
 	h3 {
 		padding-bottom: 20px;
+	}
+	a {
+		color: $mileage-plus;
+		text-decoration: none;
 	}
 
 }
