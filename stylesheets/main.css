@@ -120,7 +120,7 @@ footer li {
   font-weight: 300;
   color: white; }
 .contact-content h4 {
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 600; }
 
 html {
@@ -343,6 +343,11 @@ footer {
   width: 100%;
   padding-top: 150px; }
 
+.feature-content {
+  display: inline-block;
+  vertical-align: top;
+  width: 80%; }
+
 .mileage-content {
   padding-top: 50px;
   width: 100%;
@@ -363,6 +368,11 @@ footer {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0cef0', endColorstr='#006ba6',GradientType=0 );
   /* IE6-9 */ }
+  .mileage-content img {
+    display: inline-block;
+    width: 10%;
+    padding-right: 10px;
+    padding-top: 12px; }
   .mileage-content section {
     padding-bottom: 20px; }
   .mileage-content h3 {
@@ -398,18 +408,21 @@ footer {
     padding-left: 6px; }
   .faq-header:focus {
     outline: none; }
+  .faq-header:hover {
+    cursor: pointer; }
+  .faq-header img {
+    width: 20px;
+    transition: 200ms; }
+
+.faq-selected img {
+  transform: rotate(315deg);
+  transition: 200ms; }
 
 .faq-p-1, .faq-p-2, .faq-p-3, .faq-p-4, .faq-p-5, .faq-p-6 {
   display: none;
   background: #002244;
   color: white;
   padding: 12px; }
-
-.faq-1 {
-  border-radius: 8px 8px 0 0; }
-
-.faq-6 {
-  border-radius: 0 0 8px 8px; }
 
 @media screen and (min-width: 32em) {
   #toplogo {
@@ -576,8 +589,7 @@ footer {
   .faq {
     width: 60%;
     float: left;
-    padding: 10px;
-    margin-top: 30px; }
+    padding: 10px; }
 
   .top-ten {
     width: 40%;

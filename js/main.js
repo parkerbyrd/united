@@ -55,6 +55,12 @@ console.log("button 4 clicked")
 //// to show/hide contact info
 
 $('.faq-1').click(function(){
+	$('.faq-1').toggleClass('faq-selected')
+	$('.faq-2').removeClass('faq-selected')
+	$('.faq-3').removeClass('faq-selected')
+	$('.faq-4').removeClass('faq-selected')
+	$('.faq-5').removeClass('faq-selected')
+	$('.faq-6').removeClass('faq-selected')
 	$('.faq-p-1').toggle();
 	$('.faq-p-2').hide();
 	$('.faq-p-3').hide();
@@ -64,6 +70,12 @@ $('.faq-1').click(function(){
 })
 
 $('.faq-2').click(function(){
+	$('.faq-1').removeClass('faq-selected')
+	$('.faq-2').toggleClass('faq-selected')
+	$('.faq-3').removeClass('faq-selected')
+	$('.faq-4').removeClass('faq-selected')
+	$('.faq-5').removeClass('faq-selected')
+	$('.faq-6').removeClass('faq-selected')
 	$('.faq-p-1').hide();
 	$('.faq-p-2').toggle();
 	$('.faq-p-3').hide();
@@ -72,6 +84,12 @@ $('.faq-2').click(function(){
 	$('.faq-p-6').hide();
 })
 $('.faq-3').click(function(){
+	$('.faq-1').removeClass('faq-selected')
+	$('.faq-2').removeClass('faq-selected')
+	$('.faq-3').toggleClass('faq-selected')
+	$('.faq-4').removeClass('faq-selected')
+	$('.faq-5').removeClass('faq-selected')
+	$('.faq-6').removeClass('faq-selected')
 	$('.faq-p-1').hide();
 	$('.faq-p-2').hide();
 	$('.faq-p-3').toggle();
@@ -80,6 +98,12 @@ $('.faq-3').click(function(){
 	$('.faq-p-6').hide();
 })
 $('.faq-4').click(function(){
+	$('.faq-1').removeClass('faq-selected')
+	$('.faq-2').removeClass('faq-selected')
+	$('.faq-3').removeClass('faq-selected')
+	$('.faq-4').toggleClass('faq-selected')
+	$('.faq-5').removeClass('faq-selected')
+	$('.faq-6').removeClass('faq-selected')
 	$('.faq-p-1').hide();
 	$('.faq-p-2').hide();
 	$('.faq-p-3').hide();
@@ -88,6 +112,12 @@ $('.faq-4').click(function(){
 	$('.faq-p-6').hide();
 })
 $('.faq-5').click(function(){
+	$('.faq-1').removeClass('faq-selected')
+	$('.faq-2').removeClass('faq-selected')
+	$('.faq-3').removeClass('faq-selected')
+	$('.faq-4').removeClass('faq-selected')
+	$('.faq-5').toggleClass('faq-selected')
+	$('.faq-6').removeClass('faq-selected')
 	$('.faq-p-1').hide();
 	$('.faq-p-2').hide();
 	$('.faq-p-3').hide();
@@ -96,6 +126,12 @@ $('.faq-5').click(function(){
 	$('.faq-p-6').hide();
 })
 $('.faq-6').click(function(){
+	$('.faq-1').removeClass('faq-selected')
+	$('.faq-2').removeClass('faq-selected')
+	$('.faq-3').removeClass('faq-selected')
+	$('.faq-4').removeClass('faq-selected')
+	$('.faq-5').removeClass('faq-selected')
+	$('.faq-6').toggleClass('faq-selected')
 	$('.faq-p-1').hide();
 	$('.faq-p-2').hide();
 	$('.faq-p-3').hide();
