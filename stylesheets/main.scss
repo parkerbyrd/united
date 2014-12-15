@@ -240,6 +240,7 @@ footer {
 	background-color: $dark-blue;
 	color: $bg-main;
 	padding: 10px;
+
 	fieldset {
 		margin-top: 20px;
 	}
@@ -275,7 +276,12 @@ footer {
 			outline:none;
 		}
 	}
+	select {
+		appearance:none;
+		height: 40px;
+	}
 }
+
 .form-4 {
 	input[type="submit"] {
 		margin-top: 20px;

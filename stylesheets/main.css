@@ -117,7 +117,7 @@ footer {
     font-size: 1.6em;
     font-weight: 300; }
   .mileage-content a {
-    font-size: .6em;
+    font-size: .8em;
     line-height: 1.4; }
   .mileage-content p {
     font-size: .9em; }
@@ -133,6 +133,8 @@ footer {
 .contact-content h4 {
   font-size: 1.2em;
   font-weight: 600; }
+.contact-content p {
+  line-height: 1.5; }
 
 .top-ten li {
   line-height: 1.4; }
@@ -309,6 +311,9 @@ footer {
       border-bottom: none; }
     .form-1 input[type="submit"]:focus, .form-2 input[type="submit"]:focus, .form-3 input[type="submit"]:focus, .form-4 input[type="submit"]:focus {
       outline: none; }
+  .form-1 select, .form-2 select, .form-3 select, .form-4 select {
+    appearance: none;
+    height: 40px; }
 
 .form-4 input[type="submit"] {
   margin-top: 20px; }
