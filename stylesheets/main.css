@@ -53,11 +53,13 @@ h1, h2, h3, h4, h5, h6, p, li, a, form, button {
 
 .photo-wrap h4 {
   font-size: 1.1em;
-  padding-top: 5px; }
+  padding-top: 5px;
+  font-weight: 300; }
 .photo-wrap p {
   font-size: .8em;
   line-height: 1.5;
-  padding: 6px 0; }
+  padding: 6px 0;
+  font-weight: 400; }
 .photo-wrap a {
   font-size: .8em;
   float: right;
@@ -111,8 +113,7 @@ footer {
   .mileage-content h3 {
     padding-top: 10px;
     font-size: 2em;
-    font-weight: 300;
-    text-transform: uppercase; }
+    font-weight: 400; }
   .mileage-content h4 {
     font-size: 1.6em;
     font-weight: 300; }
@@ -124,7 +125,7 @@ footer {
 
 .contact-content h2 {
   font-size: 1.5em;
-  font-weight: 300;
+  font-weight: 400;
   padding-bottom: 16px; }
 .contact-content h3, .contact-content button {
   font-size: 1.2em;
@@ -276,7 +277,8 @@ footer {
     width: 40%;
     padding: 20px; }
   footer .contents {
-    display: none; }
+    display: none;
+    margin-left: 4%; }
 
 .form-1, .form-2, .form-3, .form-4 {
   font-size: 1em;
@@ -311,9 +313,6 @@ footer {
       border-bottom: none; }
     .form-1 input[type="submit"]:focus, .form-2 input[type="submit"]:focus, .form-3 input[type="submit"]:focus, .form-4 input[type="submit"]:focus {
       outline: none; }
-  .form-1 select, .form-2 select, .form-3 select, .form-4 select {
-    appearance: none;
-    height: 40px; }
 
 .form-4 input[type="submit"] {
   margin-top: 20px; }
@@ -330,6 +329,24 @@ footer {
     font-size: 1.2em; }
   .advanced-flight fieldset {
     padding: 10px; }
+  .advanced-flight input[type="text"] {
+    width: 200px;
+    height: 30px; }
+  .advanced-flight input[type="submit"] {
+    display: block;
+    width: 150px;
+    height: 40px;
+    background-color: #62a9e3;
+    -webkit-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+    border: none;
+    border-bottom: 2px solid #006ba6;
+    font-size: 1em; }
+    .advanced-flight input[type="submit"]:active {
+      border-bottom: none; }
+    .advanced-flight input[type="submit"]:focus {
+      outline: none; }
 
 .advanced-offer legend {
   background-color: #62a9e3;
@@ -402,6 +419,8 @@ footer {
   margin: 0 auto;
   width: 100%;
   padding-top: 150px; }
+  .mileage-header span {
+    font-weight: 400; }
 
 .feature-content {
   display: inline-block;
@@ -582,7 +601,7 @@ footer {
   margin: 0 auto; }
   .col-1-2 h2 {
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center; }
 
 .checkin-button {
@@ -818,9 +837,9 @@ footer {
 
   .advanced-flight {
     width: 60%;
-    border: 1px solid gray;
-    margin-left: 1%;
-    margin-bottom: 20px; }
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: #f8f8f8; }
 
   .copy-left {
     width: 48%;

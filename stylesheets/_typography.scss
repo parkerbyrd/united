@@ -21,12 +21,14 @@ h1, h2, h3, h4, h5, h6, p, li, a, form, button {
 	h4 {
 		font-size: 1.1em;
 		padding-top: 5px;
+		font-weight: 300;
 		
 	}
 	p {
 		font-size: .8em;
 		line-height: 1.5;
 		padding: 6px 0;
+		font-weight: 400;
 	}
 	a {
 		font-size: .8em;
@@ -104,8 +106,8 @@ h2 {
 	h3 {
 		padding-top: 10px;
 		font-size: 2em;
-		font-weight: 300;
-		text-transform: uppercase;
+		font-weight: 400;
+		
 		
 	}
 	h4 {
@@ -127,8 +129,9 @@ h2 {
 .contact-content {
 	h2 {
 		font-size: 1.5em;
-		font-weight: 300;
+		font-weight: 400;
 		padding-bottom: 16px;
+		
 	}
 	h3, button {
 		font-size: 1.2em;

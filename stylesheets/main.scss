@@ -234,7 +234,7 @@ footer {
 	}
 	.contents {
 		display: none;
-
+		margin-left: 4%;
 	}
 }
 
@@ -286,10 +286,7 @@ footer {
 			outline:none;
 		}
 	}
-	select {
-		appearance:none;
-		height: 40px;
-	}
+	
 }
 
 .form-4 {
@@ -314,7 +311,26 @@ footer {
 	fieldset {
 		padding: 10px;
 	}
-
+	input[type="text"] {
+		width: 200px;
+		height: 30px;
+	}
+	input[type="submit"] {
+		display: block;
+		width: 150px;
+		height: 40px;
+		background-color: $light-blue;
+		@include box-shadow;
+		border: none;
+		border-bottom: 2px solid $primary-blue;
+		font-size: 1em;
+		&:active {
+			border-bottom: none;
+		}
+		&:focus {
+			outline:none;
+		}
+	}
 }
 .advanced-offer {
 	legend {
@@ -369,6 +385,9 @@ footer {
 	margin: 0 auto;
 	width: 100%;
 	padding-top: 150px;
+	span {
+		font-weight: 400;
+	}
 
 }
 .feature-content {
@@ -559,7 +578,7 @@ footer {
 .col-1-2 {
 	h2 {
 		font-size: 2em;
-		font-weight: 300;
+		font-weight: 400;
 		text-align: center;
 	}
 	padding-top: 40px;
