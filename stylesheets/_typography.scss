@@ -29,8 +29,12 @@ h1, h2, h3, h4, h5, h6, p, li, a, form, button {
 		padding: 6px 0;
 	}
 	a {
-		font-size: .6em;
+		font-size: .8em;
 		float: right;
+		color: #006ba6;
+		&:hover {
+			color: #62a9e3;
+		}
 	}
 }
 
@@ -50,12 +54,20 @@ form {
 
 
 footer {
+	padding: 24px;
 	h3 {
 		font-size: 1.2em;
 		font-weight: 300;
 	}
-	li {
+	a {
 		font-size: .8em;
+		color: #002244;
+		line-height: 1.4;
+		text-decoration: none;
+		&:hover {
+			color: #006ba6;
+		}
+
 	}
 }
 

@@ -44,12 +44,12 @@ box-shadow:         -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
 
 @mixin sky-gradient {
 	background: #a0cef0; /* Old browsers */
-background: -moz-linear-gradient(top,  #a0cef0 25%, #006ba6 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,#a0cef0), color-stop(100%,#006ba6)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #a0cef0 25%,#006ba6 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #a0cef0 25%,#006ba6 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #a0cef0 25%,#006ba6 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #a0cef0 25%,#006ba6 100%); /* W3C */
+background: -moz-linear-gradient(top,  #a0cef0 0%, #006ba6 60%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a0cef0), color-stop(60%,#006ba6)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #a0cef0 0%,#006ba6 60%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #a0cef0 0%,#006ba6 60%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #a0cef0 0%,#006ba6 60%); /* IE10+ */
+background: linear-gradient(to bottom,  #a0cef0 0%,#006ba6 60%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0cef0', endColorstr='#006ba6',GradientType=0 ); /* IE6-9 */
 
 }
@@ -131,7 +131,11 @@ img {
 
 
 .container {
-	max-width:1200px;
+	max-width:1300px;
+	margin: 0 auto;
+}
+.container-2 {
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -230,12 +234,14 @@ footer {
 
 
 .form-1, .form-2, .form-3, .form-4 {
+	font-size: 1em;
 	display: none;
+	line-height: 1.4;
 	background-color: $dark-blue;
 	color: $bg-main;
 	padding: 10px;
 	fieldset {
-		margin-top: 8px;
+		margin-top: 20px;
 	}
 	label {
 		display: block;
@@ -243,10 +249,39 @@ footer {
 	input {
 		display: inline-block;
 	}
+
 	#people {
 		label {
 			display:inline-block;
 		}
+	}
+	input[type="text"] {
+		width: 200px;
+		height: 30px;
+	}
+	input[type="submit"] {
+		display: block;
+		width: 150px;
+		height: 40px;
+		background-color: $light-blue;
+		@include box-shadow;
+		border: none;
+		border-bottom: 2px solid $primary-blue;
+		font-size: 1em;
+		&:active {
+			border-bottom: none;
+		}
+		&:focus {
+			outline:none;
+		}
+	}
+}
+.form-4 {
+	input[type="submit"] {
+		margin-top: 20px;
+	}
+	select {
+		margin-top: 10px;
 	}
 }
 .advanced-flight {

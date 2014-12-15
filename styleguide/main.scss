@@ -1,0 +1,133 @@
+$bg-main: #ffffff;
+$main-gray: #d4d4d0;
+$platinum-gray: #7c848a;
+$primary-text: #000000;
+$primary-blue: #006ba6; 
+$mileage-plus: #edb72b;
+$light-blue: #62a9e3;
+$dark-blue: #002244;
+$sky-blue: #a0cef0;
+
+
+@mixin color ($background-color) {
+	background-color: $background-color;
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+}
+
+
+.container {
+	width:1200px;
+	margin: 0 auto;
+}
+/* Page Styles */
+h1, h2, h3, h4, h5, h6, body {
+	font-family: "lato",sans-serif;
+	font-weight: 300;
+
+}
+h1 {
+	font-size: 3.5em;
+}
+h2 { 
+	font-size:2.5em;
+}
+h3 {
+	font-size: 2em;
+}
+h4 {
+	font-size: 1.6em;
+}
+h5 {
+	font-size: 1em;
+}
+p {
+	font-size: .8em;
+	font-weight: 300;
+	line-height: 22px;
+}
+.header {
+	text-align: center;
+	line-height: 1;
+	border-bottom: 3px solid gray;
+}
+
+.logos {
+	img {
+	width: 30%;	
+	display: block;
+	margin: 16px auto;
+	margin-left: 200px;
+	padding: 16px;
+}
+	p {
+		width: 30%;
+		margin-left: 200px;;
+	}
+}
+
+.typography {
+	width: 70%;
+	margin-left: 200px;
+}
+.colorpalette {
+	width: 50%;
+	margin-left: 200px;
+	margin-top: 50px;
+}
+.colors	{
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.color1 {
+	@include color($bg-main);
+	border: 1px solid black;
+}
+.color2 {
+	@include color($main-gray);
+}
+.color3 {
+	@include color($primary-text);
+}
+.color4 {
+	@include color($primary-blue);
+}
+.color5 {
+	@include color($mileage-plus);
+}
+.color6 {
+	@include color($light-blue);
+}
+.color7 {
+	@include color($dark-blue);
+}
+.color8 {
+	@include color($sky-blue);
+}
+
+
+
+
+.icons {
+	margin-left:200px;
+	img {
+	height: 100px;
+	width: 100px;
+	margin-right: 40px; 
+	margin-bottom: 20px;
+}
+}
+.copy {
+	background-color: #006ba6;
+	padding: 20px;
+	width:600px;
+	color: white;
+
+}
+.textures img {
+	height:200px;
+	width: 300px;
+	margin-right: 20px;
+}
