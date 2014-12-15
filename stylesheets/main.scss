@@ -115,7 +115,16 @@ img {
 	background-size:cover;
 	min-height:400px;
 	width: 100%;
-	
+	h1{
+		font-size: 2em;
+		font-weight: 300;
+		font-style: italic;
+		color: white;
+		position: absolute;
+		top: 120px;
+		left: 10px;
+
+	}
 }
 
 
@@ -127,7 +136,9 @@ img {
 
 
 
-	
+.fly {
+	display:none;
+}	
 
 
 
@@ -352,17 +363,26 @@ footer {
 	
 	width: 100%;
 	line-height: 1.4;
+	margin-bottom: 100px;
 	p {
 		padding-left: 8px;
 	}
 }
 .top-ten {
 	width: 100%;
+	margin-bottom: 100px;
+	padding: 10px;
 	li {
 		line-height: 1.5;
+		a {
+		text-decoration: none;
+		color: $primary-blue;
+		&:hover {
+			color: $sky-blue;
+		}
 	}
 }
-
+}
 
 .faq-header {
 	 
@@ -400,7 +420,65 @@ footer {
 	color: white;
 	padding: 12px;
 }
+.contact-left {
+	width: 100%;
+	padding: 10px 3%;
+	min-height: 300px;
+	vertical-align: top;
+	border-bottom: 1px solid gray;
+	h2 {
+		text-align: center;
+		padding-top: 30px;
+	}
+	img {
+		width: 200px;
+		display: block;
+		margin: 0 auto;
+	}
+}
+.social-links {
+	width: 100%;
+	padding: 10px 3%;
+	min-height: 300px;
+	vertical-align: top;
+	border-bottom: 1px solid gray;
+	img {
+		width: 30%;
+		display: inline-block;
+		padding-top: 60px;
+		padding-bottom: 70px;
 
+	}
+	h3 {
+		color: black;
+	}
+}
+.contact-right {
+	width: 100%;
+	padding: 10px 3%;
+	min-height: 300px;
+	vertical-align: top;
+	border-bottom: 1px solid gray;
+	h2 {
+		text-align: center;
+		padding-top: 30px;
+	}
+	img {
+		width: 200px;
+		display: block;
+		margin: 0 auto;
+	}
+}
+.contact-us {
+	width: 100%;
+	border-bottom: 1px solid gray;
+	h1 {
+		font-size: 2.2em;
+		font-weight: 300;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+}
 
 
 @import "mediaquery38em";
