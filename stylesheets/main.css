@@ -471,6 +471,21 @@ footer {
   height: 38px;
   border: 1px solid black;
   background: #006ba6;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #006ba6 0%, #005291 97%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #006ba6), color-stop(97%, #005291));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #006ba6 0%, #005291 97%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #006ba6 0%, #005291 97%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #006ba6 0%, #005291 97%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #006ba6 0%, #005291 97%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006ba6', endColorstr='#005291',GradientType=0 );
+  /* IE6-9 */
   text-align: left; }
   .faq-header h3 {
     padding-left: 6px; }
@@ -519,8 +534,14 @@ footer {
     padding-bottom: 70px;
     padding-right: 1.6666%;
     padding-left: 1.6666%; }
-  .social-links h3 {
-    color: black; }
+  .social-links h2 {
+    color: black;
+    text-align: center; }
+  .social-links a {
+    color: #002244;
+    text-decoration: none; }
+    .social-links a:hover {
+      color: #006ba6; }
 
 .contact-right {
   width: 100%;
@@ -828,10 +849,10 @@ footer {
     padding: 10px; }
 
   .faq-1 {
-    border-radius: 8px 8px 0 0; }
+    border-radius: 6px 6px 0 0; }
 
   .faq-6 {
-    border-radius: 0 0 8px 8px; }
+    border-radius: 0 0 6px 6px; }
 
   .contact-left {
     width: 33%;

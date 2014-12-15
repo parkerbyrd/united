@@ -35,7 +35,17 @@ background: -ms-linear-gradient(top,  #003399 1%,#50a4e5 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #002244 20%,#002255 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003399', endColorstr='#50a4e5',GradientType=0 ); /* IE6-9 */
 }
+@mixin faq-grad {
+	background: #006ba6; /* Old browsers */
+background: -moz-linear-gradient(top,  #006ba6 0%, #005291 97%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#006ba6), color-stop(97%,#005291)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #006ba6 0%,#005291 97%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #006ba6 0%,#005291 97%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #006ba6 0%,#005291 97%); /* IE10+ */
+background: linear-gradient(to bottom,  #006ba6 0%,#005291 97%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006ba6', endColorstr='#005291',GradientType=0 ); /* IE6-9 */
 
+}
 @mixin box-shadow {
 	-webkit-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
 -moz-box-shadow:    -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
@@ -433,7 +443,7 @@ footer {
 	width: 100%;
 	height: 38px;
 	border: 1px solid black;
-	background: $primary-blue;
+	@include faq-grad;
 	text-align: left;
 	h3 {
 		padding-left: 6px;
@@ -493,8 +503,17 @@ footer {
 		padding-left: 1.6666%;
 
 	}
-	h3 {
+	h2 {
 		color: black;
+		text-align: center;
+
+	}
+	a {
+		color: $dark-blue;
+		text-decoration: none;
+		&:hover {
+			color: $primary-blue;
+		}
 	}
 }
 .contact-right {
