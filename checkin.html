@@ -31,5 +31,105 @@
 					<li><a href="#">My Account</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
 				</ul>
-				<img src="images/slices/logotop.png" id="toplogo" alt="logo">
+				<img src="images/slices/logotop.png"  class="checkinlogo" alt="logo">
 			</div>
+
+
+			<div class="checkin-header">
+				<h1>Flight Check-in</h1>
+			</div>
+
+			<div class="col-1-2 checkin-member">
+				<h2>Welcome, MileagePlus Member!</h2>
+					<button class="checkin-button">
+						Not a member?
+					</button>
+					<form class="go-bottom">
+					  
+					  <div>
+					    <input id="mileageplusnumber" name="mileageplusnumber" type="text" required>
+					    <label for="mileageplusnumber">MileagePlus number</label>
+					  </div>
+					  <div>
+					    <input id="password" name="password" type="password" required>
+					    <label for="password">Password</label>
+					  </div>
+					  <input type="submit" class="submit">
+					</form>
+			</div>
+			<div class="col-1-2 checkin-nonmember">
+				<h2>Welcome to United Airlines!</h2>
+				<form class="go-bottom">
+					  
+					  <div>
+					    <input id="lastname" name="lastname" type="text" required>
+					    <label for="lastname">Last Name</label>
+					  </div>
+					  <div>
+					    <input id="ticket" name="ticket" type="text" required>
+					    <label for="ticket">Confirmation Code / Ticket Number</label>
+					  </div>
+					  <input type="submit" class="submit">
+					</form>
+			</div>
+			
+			<div class="col-1-3"></div>
+			<div class="col-1-3"></div>
+			<div class="col-1-3"></div>
+
+
+
+
+
+
+
+
+			<footer>
+				<img src="images/slices/footerlogo.png" alt="Logo">
+				<div class="contents">
+					<section>
+						<h3>Flight Information</h3>
+						<ul>
+							<li>Book a Flight</li>
+							<li>Book a Hotel</li>
+							<li>Book a Car</li>
+							<li>View/Change Reservation</li>
+							<li>Check-in for flight</li>
+							<li>Flight status/Information</li>
+							<li>Baggage Information</li>
+						</ul>
+					</section>
+					<section>
+						<h3>About United</h3>
+						<ul>
+							<li>Advertise with Us</li>
+							<li>Branding</li>
+							<li>Careers</li>
+							<li>Company Profile</li>
+							<li>United Shop</li>
+							<li>Investor Relations</li>
+							<li>Newsroom</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Special Offers</h3>
+						<ul>
+							<li>United Specials</li>
+							<li>Email Subscriptions</li>
+							<li>MileagePlus News and Offers</li>
+							<li>Promotional Certificates</li>
+							<li>Vacation Packages</li>
+							<li>Veterans Advantage Discount</li>
+							<li>RSS Subscriptions</li>
+						</ul>
+					</section>
+				</div>
+			</footer>
+		</div>
+		<script>
+		var nav = responsiveNav(".nav-collapse");
+		</script>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>

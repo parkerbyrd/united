@@ -140,5 +140,8 @@ $('.faq-6').click(function(){
 	$('.faq-p-6').toggle();
 })
 
-
+$('.checkin-button').click(function(){
+	$('.checkin-member').hide();
+	$('.checkin-nonmember').show();
+})
 

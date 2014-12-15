@@ -82,9 +82,7 @@ img {
   	
   
 .small-header {
-	position: fixed;
-	background: white;
-	width: 100%;
+	background:white;
 	// background-image: url('../images/big.png');
 	// background-repeat: no-repeat;
 	// background-size:cover;
@@ -426,7 +424,7 @@ footer {
 .contact-left {
 	width: 100%;
 	padding: 10px 3%;
-	min-height: 300px;
+	min-height: 400px;
 	vertical-align: top;
 	border-bottom: 1px solid gray;
 	h2 {
@@ -442,7 +440,7 @@ footer {
 .social-links {
 	width: 100%;
 	padding: 10px 3%;
-	min-height: 300px;
+	min-height: 400px;
 	vertical-align: top;
 	border-bottom: 1px solid gray;
 	img {
@@ -450,6 +448,8 @@ footer {
 		display: inline-block;
 		padding-top: 60px;
 		padding-bottom: 70px;
+		padding-right: 1.6666%;
+		padding-left: 1.6666%;
 
 	}
 	h3 {
@@ -459,7 +459,7 @@ footer {
 .contact-right {
 	width: 100%;
 	padding: 10px 3%;
-	min-height: 300px;
+	min-height: 400px;
 	vertical-align: top;
 	border-bottom: 1px solid gray;
 	h2 {
@@ -482,6 +482,127 @@ footer {
 		text-align: center;
 	}
 }
+/////checkin
+
+.checkin-header {
+	width: 100%;
+	border-bottom: 1px solid gray;
+	padding: 40px 0;
+	h1 {
+		font-size: 2.2em;
+		font-weight: 300;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+}
+
+.col-1-2 {
+	h2 {
+		font-size: 2em;
+		font-weight: 300;
+		text-align: center;
+	}
+	padding-top: 40px;
+	width: 100%;
+	margin: 0 auto;
+}
+.checkin-button {
+
+		width: 33%;
+		height: 45px;
+		margin: 16px 33%;
+		background: $primary-blue;
+		font-size: .8em;
+		border: none;
+		margin-top: 40px;
+		color: white;
+		cursor: pointer;
+	
+}
+.go-bottom {
+  width: 60%;
+  padding: 20px 0;
+  margin: 20px auto;
+  > div {
+    position: relative;
+    overflow: hidden;
+  }
+  input, textarea {
+	margin: 0 auto;
+  	margin-top: 30px;
+    width: 100%;
+    border: 2px solid gray; 
+    background: none;
+    
+    z-index: 1;
+    padding: 8px 12px;
+    outline: 0;
+    &:valid {
+      // Hides the label
+      background: white; 
+    }
+    &:focus {
+      border-color: $primary-blue;
+    }
+    &:focus + label {
+      background: $primary-blue;
+      color: white;
+      font-size: 70%;
+      padding: 1px 6px;
+      z-index: 2;
+      text-transform: uppercase;
+    }
+  }
+  label {
+    transition: // not padding
+      background 0.2s,
+      color 0.2s,
+      top 0.2s,
+      bottom 0.2s,
+      right 0.2s,
+      left 0.2s;
+    position: absolute;
+    color: #999;
+    padding: 7px 6px;
+
+  }
+  textarea {
+    display: block;
+    resize: vertical;
+
+  }
+
+
+
+  input, textarea {
+    padding: 12px 12px 12px 12px; 
+  }
+  label {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  input:focus, textarea:focus {
+    padding: 4px 6px 20px 6px; 
+  }
+  input:focus + label, textarea:focus + label {
+    top: 100%;
+    margin-top: -16px;
+  }
+}
+
+
+
+.checkin-nonmember {
+	display: none;
+}
+
+
+
+
+
+
 
 
 @import "mediaquery38em";

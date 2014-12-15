@@ -1,8 +1,8 @@
 @media screen and (min-width:50em){
 
 .small-header{
-	position: relative;
-	background: white;
+	
+background: none;
 }
 .login {
 	clear: both;
@@ -188,7 +188,14 @@ nav {
 }
 
 
-
+.mileage-logo {
+	img {
+		display: none;
+	}
+}
+.mileage-header {
+	padding-top: 220px;
+}
 
 ////contact 
 
@@ -241,9 +248,16 @@ nav {
 	margin-bottom: 40px;
 }
 
+.checkinlogo {
+	width: 20%;
+	padding-top: 30px;
+}
 
-
-
-
+.go-bottom {
+	width: 60%;
+}
+.col-1-2 {
+	width: 50%;
+}
 
 }
