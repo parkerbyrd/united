@@ -176,9 +176,8 @@ img {
     font-weight: 300;
     font-style: italic;
     color: white;
-    position: absolute;
-    top: 120px;
-    left: 10px; }
+    padding-top: 80px;
+    padding-left: 10px; }
 
 .container {
   max-width: 1200px;
