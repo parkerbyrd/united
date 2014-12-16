@@ -88,8 +88,25 @@ img {
 	max-width:100%;
 }
 
+///containers
 
-  	
+.container-main {
+	width:100%;
+	margin: 0 auto;
+}
+.container-2 {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.bg-darkblue{
+	background-color:$dark-blue;
+}  
+.bg-primaryblue {
+	background-color: $primary-blue;
+}
+.bg-lightblue {
+	background-color: $light-blue;
+}	
   
 .small-header {
 	background:white;
@@ -140,14 +157,7 @@ img {
 
 
 
-.container {
-	max-width:1300px;
-	margin: 0 auto;
-}
-.container-2 {
-	max-width: 1200px;
-	margin: 0 auto;
-}
+
 
 
 
@@ -221,6 +231,8 @@ img {
 }
 .photo-wrap {
 	display: none;
+	max-width: 1200px;
+	margin: 0 auto;
 
 }
 
@@ -594,7 +606,7 @@ footer {
 		background: $primary-blue;
 		font-size: .8em;
 		border: none;
-		border-bottom: 2px solid $dark-blue;
+		border-bottom: 3px solid $dark-blue;
 		margin-top: 40px;
 		color: white;
 		cursor: pointer;
@@ -609,7 +621,8 @@ footer {
 .go-bottom {
   width: 60%;
   padding: 20px 0;
-  margin: 20px auto;
+  margin: 0 auto;
+
   > div {
     position: relative;
     overflow: hidden;

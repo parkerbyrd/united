@@ -142,8 +142,13 @@ $('.faq-6').click(function(){
 	$('.faq-p-6').slideToggle();
 })
 
-$('.checkin-button').click(function(){
+$('.member-button').click(function(){
 	$('.checkin-member').fadeOut(500);
 	$('.checkin-nonmember').delay(500).fadeIn();
+})
+
+$('.nonmember-button').click(function(){
+	$('.checkin-nonmember').fadeOut(500);
+	$('.checkin-member').delay(500).fadeIn();
 })
 

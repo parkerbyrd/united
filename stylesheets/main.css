@@ -149,6 +149,23 @@ html {
 img {
   max-width: 100%; }
 
+.container-main {
+  width: 100%;
+  margin: 0 auto; }
+
+.container-2 {
+  max-width: 1300px;
+  margin: 0 auto; }
+
+.bg-darkblue {
+  background-color: #002244; }
+
+.bg-primaryblue {
+  background-color: #006ba6; }
+
+.bg-lightblue {
+  background-color: #62a9e3; }
+
 .small-header {
   background: white; }
   .small-header img {
@@ -193,14 +210,6 @@ img {
     color: white;
     padding-top: 80px;
     padding-left: 10px; }
-
-.container {
-  max-width: 1300px;
-  margin: 0 auto; }
-
-.container-2 {
-  max-width: 1200px;
-  margin: 0 auto; }
 
 .fly {
   display: none; }
@@ -269,7 +278,9 @@ img {
       transition: 200ms; }
 
 .photo-wrap {
-  display: none; }
+  display: none;
+  max-width: 1200px;
+  margin: 0 auto; }
 
 footer {
   clear: both;
@@ -614,7 +625,7 @@ footer {
   background: #006ba6;
   font-size: .8em;
   border: none;
-  border-bottom: 2px solid #002244;
+  border-bottom: 3px solid #002244;
   margin-top: 40px;
   color: white;
   cursor: pointer; }
@@ -626,7 +637,7 @@ footer {
 .go-bottom {
   width: 60%;
   padding: 20px 0;
-  margin: 20px auto; }
+  margin: 0 auto; }
   .go-bottom > div {
     position: relative;
     overflow: hidden; }
