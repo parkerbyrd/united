@@ -192,8 +192,9 @@ img {
 		padding-left: 10px;
 		border:1px solid black;
 		color: white;
-		padding-top: 13px;
+		padding-top: 10px;
 		text-align: left;
+		transition-delay: 300ms;
 		&:focus {
 			outline: none;
 		}
@@ -210,7 +211,7 @@ img {
 
 
 .btn-selected {
-		
+		transition-delay: 0;
 	
 	img {
 		transform: rotate(180deg);
@@ -593,9 +594,16 @@ footer {
 		background: $primary-blue;
 		font-size: .8em;
 		border: none;
+		border-bottom: 2px solid $dark-blue;
 		margin-top: 40px;
 		color: white;
 		cursor: pointer;
+		&:focus {
+			outline: none;
+		}
+		&:active {
+			border-bottom: none;
+		}
 	
 }
 .go-bottom {
@@ -674,7 +682,20 @@ footer {
 
 
 .checkin-nonmember {
+	width:100%;
 	display: none;
+	color: white;
+	background-color: $dark-blue;
+	label {
+		color: white;
+	}
+	input {
+		border: 2px solid white;
+	}
+
+}
+.checkin-member {
+	width: 100%;
 }
 
 

@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6, p, li, a, form, button {
 
 .main-content .dropdown {
   font-weight: 300;
-  font-size: 1.2em; }
+  font-size: 1.3em; }
 
 .photo-wrap h4 {
   font-size: 1.1em;
@@ -249,8 +249,9 @@ img {
     padding-left: 10px;
     border: 1px solid black;
     color: white;
-    padding-top: 13px;
-    text-align: left; }
+    padding-top: 10px;
+    text-align: left;
+    transition-delay: 300ms; }
     .main-content .dropdown:focus {
       outline: none; }
     .main-content .dropdown img {
@@ -261,9 +262,11 @@ img {
       right: 0px;
       bottom: 20px;
       transition: 200ms; }
-  .main-content .btn-selected img {
-    transform: rotate(180deg);
-    transition: 200ms; }
+  .main-content .btn-selected {
+    transition-delay: 0; }
+    .main-content .btn-selected img {
+      transform: rotate(180deg);
+      transition: 200ms; }
 
 .photo-wrap {
   display: none; }
@@ -611,9 +614,14 @@ footer {
   background: #006ba6;
   font-size: .8em;
   border: none;
+  border-bottom: 2px solid #002244;
   margin-top: 40px;
   color: white;
   cursor: pointer; }
+  .checkin-button:focus {
+    outline: none; }
+  .checkin-button:active {
+    border-bottom: none; }
 
 .go-bottom {
   width: 60%;
@@ -664,7 +672,17 @@ footer {
     margin-top: -16px; }
 
 .checkin-nonmember {
-  display: none; }
+  width: 100%;
+  display: none;
+  color: white;
+  background-color: #002244; }
+  .checkin-nonmember label {
+    color: white; }
+  .checkin-nonmember input {
+    border: 2px solid white; }
+
+.checkin-member {
+  width: 100%; }
 
 @media screen and (min-width: 32em) {
   #toplogo {
@@ -807,20 +825,35 @@ footer {
     background-image: none;
     min-height: 100px; }
     .small-header #toplogo {
-      margin-bottom: 30px;
+      margin-bottom: 34px;
       padding-top: 20px; }
     .small-header nav {
       width: 65%;
       float: right; }
       .small-header nav li {
         float: left;
-        background: #002244;
+        background: #003399;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #003399 1%, #50a4e5 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #003399), color-stop(100%, #50a4e5));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #003399 1%, #50a4e5 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #003399 1%, #50a4e5 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #003399 1%, #50a4e5 100%);
+        /* IE10+ */
+        background: linear-gradient(to bottom, #002244 20%, #002255 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003399', endColorstr='#50a4e5',GradientType=0 );
+        /* IE6-9 */
         width: 20%;
-        height: 30px;
+        height: 32px;
         text-align: center;
         border: 1px solid black;
         color: white;
-        padding-top: 5px;
+        padding-top: 7px;
         text-decoration: none;
         font-size: .8em; }
 
@@ -907,9 +940,10 @@ footer {
     padding-top: 30px; }
 
   .go-bottom {
-    width: 60%; }
+    width: 33%; }
 
   .col-1-2 {
-    width: 50%; } }
+    padding-top: 70px;
+    padding-bottom: 70px; } }
 
 /*# sourceMappingURL=main.css.map */

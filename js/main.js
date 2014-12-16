@@ -44,7 +44,7 @@ $('.button-4').click(function(){
 $('.button-1').removeClass('btn-selected')
 $('.button-2').removeClass('btn-selected')
 $('.button-3').removeClass('btn-selected')
-$('.button-4').toggleClass('btn-selected')	
+$('.button-4').delay(300).toggleClass('btn-selected')	
 $('.form-1').hide();
 $('.form-2').hide();
 $('.form-3').hide();
@@ -143,7 +143,7 @@ $('.faq-6').click(function(){
 })
 
 $('.checkin-button').click(function(){
-	$('.checkin-member').hide();
-	$('.checkin-nonmember').show();
+	$('.checkin-member').fadeOut(500);
+	$('.checkin-nonmember').delay(500).fadeIn();
 })
 

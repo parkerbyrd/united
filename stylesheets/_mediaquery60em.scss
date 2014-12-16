@@ -131,7 +131,7 @@ background: none;
 	background-image: none;
 	min-height: 100px;
 	#toplogo {
-		margin-bottom: 30px;
+		margin-bottom: 34px;
 		padding-top: 20px;
 	}
 
@@ -140,13 +140,14 @@ nav {
 	float: right;
 	li {
 		float: left;
-		background: $dark-blue;
+		// background: $dark-blue;
+		@include button-grad;
 		width: 20%;
-		height: 30px;
+		height: 32px;
 		text-align: center;
 		border:1px solid black;
 		color: white;
-		padding-top: 5px;
+		padding-top: 7px;
 		text-decoration: none;
 		font-size: .8em;
 	}
@@ -263,10 +264,12 @@ footer {
 }
 
 .go-bottom {
-	width: 60%;
+	width: 33%;
+
 }
 .col-1-2 {
-	width: 50%;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 
 }
