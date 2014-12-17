@@ -13,42 +13,42 @@
 	<body>
 		<div class="container">
 			<div class="container-2">
-			<div class="small-header">
-				
-				
-				<nav class="nav-collapse top-nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="flightsearch.html">Travel Information</a></li>
-						<li><a href="checkin.html">Check-in</a></li>
-						<li><a href="mileageplus.html">MileagePlus</a></li>
+				<div class="small-header">
+					
+					
+					<nav class="nav-collapse top-nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="flightsearch.html">Book a Flight</a></li>
+							<li><a href="checkin.html">Check In</a></li>
+							<li><a href="mileageplus.html">MileagePlus</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</nav>
+					<ul class="login">
+						<li><a href="#">Sign in</a></li>
+						<li><a href="#">My Account</a></li>
 						<li><a href="contact.html">Contact Us</a></li>
 					</ul>
-				</nav>
-				<ul class="login">
-					<li><a href="#">Sign in</a></li>
-					<li><a href="#">My Account</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-				</ul>
-				<img src="images/slices/logotop.png" id="toplogo" alt="logo">
-			</div>
-			<div class="small-bg">
-				<h1>fly the friendly skies</h1>
-			</div>
-			<div class="main-content">
-				<div class="fly">
+					<img src="images/slices/logotop.png" id="toplogo" alt="logo">
+				</div>
+				<div class="small-bg">
 					<h1>fly the friendly skies</h1>
 				</div>
-				<button class="dropdown button-1">
+				<div class="main-content">
+					<div class="fly">
+						<h1>fly the friendly skies</h1>
+					</div>
+					<button class="dropdown button-1">
 					<h3>Book a Trip</h3>
 					<img src="images/triangle-24.png" alt="arrow">
-				</button>
+					</button>
 					<form action="#" class="form-1">
 						<fieldset>
 							
-								<input type="radio" name="Trip" value="Round-Trip"> Round-Trip
+							<input type="radio" name="Trip" value="Round-Trip"> Round-Trip
 							
-								<input type="radio" name="Trip" value="One-way"> One-Way
+							<input type="radio" name="Trip" value="One-way"> One-Way
 							
 						</fieldset>
 						<fieldset>
@@ -77,9 +77,9 @@
 								<option value="Late Afternoon">Late Afternoon</option>
 								<option value="Evening">Evening</option>
 								<option value="Night">Night</option>
-								</select>
-							</fieldset>
-							<fieldset>
+							</select>
+						</fieldset>
+						<fieldset>
 							
 							<label for="return">Return Date:</label>
 							<input type="text" name="return" id="return">
@@ -139,153 +139,152 @@
 							<input type="submit" name="search" value="Search">
 						</fieldset>
 					</form>
-				
-				<button class="dropdown button-2">
-				<h3>Flight Check-in</h3>
-				<img src="images/triangle-24.png" alt="arrow">
-				</button>
-				<form action="#" class="form-2">
-					<fieldset>
-						<legend>Search by</legend>
-						<label for="confirmation">Confirmation Number</label>
+					
+					<button class="dropdown button-2">
+					<h3>Flight Check-in</h3>
+					<img src="images/triangle-24.png" alt="arrow">
+					</button>
+					<form action="#" class="form-2">
+						<fieldset>
+							<legend>Search by</legend>
+							<label for="confirmation">Confirmation Number</label>
 							<input type="text" name="confirmation" id="confirmation">
 							<p>or</p>
 							<label for="mileageplus">MileagePlus Number</label>
 							<input type="text" name="mileageplus id="mileageplus>
-
-					</fieldset>
-					<fieldset>
+						</fieldset>
+						<fieldset>
 							<input type="submit" name="search" value="Search">
 						</fieldset>
-				</form>
+					</form>
 					<button class="dropdown button-3">
-				<h3>Reservations</h3>
-				<img src="images/triangle-24.png" alt="arrow">
-			</button>
-			<form action="#" class="form-3">
-				<fieldset>
-					<legend>Find your reservation</legend>
-					<label>
+					<h3>Reservations</h3>
+					<img src="images/triangle-24.png" alt="arrow">
+					</button>
+					<form action="#" class="form-3">
+						<fieldset>
+							<legend>Find your reservation</legend>
+							<label>
 								<input type="radio" name="flight" value="flight">Flight
 							</label>
 							<label>
 								<input type="radio" name="car" value="car">Car
 							</label><br>
-					<label for="confirmation">Confirmation</label>
-					<input type="text" id="confirmation"><br>
-					<label for="lastname"> Last Name</label>
-					<input type="text" id="lastname">
-				</fieldset>
-				<fieldset>
-					<input type="submit" name="search" value="Search">
-				</fieldset>
-			</form>
-			<button class="dropdown button-4">
-				<h3>Flight Status</h3>	
-				<img src="images/triangle-24.png" alt="arrow">
-			</button>
-			<form action="#" class="form-4">
-				<fieldset>
-					<label for="flightnumber">Flight Number:</label>
-					<input type="text" id="flightnumber">
-					<label for="depart"></label>
-					<select name="depart" id="depart">
+							<label for="confirmation">Confirmation</label>
+							<input type="text" id="confirmation"><br>
+							<label for="lastname"> Last Name</label>
+							<input type="text" id="lastname">
+						</fieldset>
+						<fieldset>
+							<input type="submit" name="search" value="Search">
+						</fieldset>
+					</form>
+					<button class="dropdown button-4">
+					<h3>Flight Status</h3>
+					<img src="images/triangle-24.png" alt="arrow">
+					</button>
+					<form action="#" class="form-4">
+						<fieldset>
+							<label for="flightnumber">Flight Number:</label>
+							<input type="text" id="flightnumber">
+							<label for="depart"></label>
+							<select name="depart" id="depart">
 								<option value="dec17" selected>Wed. December 17</option>
 								<option value="dec18">Thu. December 18</option>
 								<option value="dec19">Fri. December 19</option>
 							</select>
-				</fieldset>
-				<fieldset>
-					<p>Don't know the flight number?</p>
-					<label align="top" for="from">City or Airport</label>
-					<input type="text" id="from" placeholder="From">
-					<label for="to">City or Airport</label>
-					<input type="text" id="to" placeholder="To"><br>
-					<input type="submit" name="search" value="Check Status">
-				</fieldset>
-			</form>
-		</div>
-			<div class="photo-wrap">
-				<div>
-					<img src="images/slices/unitedgate.png" id="photo1" alt="Check In">
-					<h4>Check in to your flight online</h4>
-					<p>Save time at the gate</p>
-					<a href="#">Learn more &rarr;</a>
+						</fieldset>
+						<fieldset>
+							<p>Don't know the flight number?</p>
+							<label align="top" for="from">City or Airport</label>
+							<input type="text" id="from" placeholder="From">
+							<label for="to">City or Airport</label>
+							<input type="text" id="to" placeholder="To"><br>
+							<input type="submit" name="search" value="Check Status">
+						</fieldset>
+					</form>
 				</div>
-				<div>
-					<img src="images/slices/baggage.png" id="photo2" alt="Baggage Claim">
-					<h4>Baggage Delivery</h4>
-					<p>Skip your wait at the baggage terminal</p>
-					<a href="#">Learn More &rarr;</a>
-				</div>
-				<div>
-					<img src="images/slices/unitedclub.png" id="photo3" alt="United Club">
-					<h4>Welcome to United Club</h4>
-					<p>Relaxing. Comfortable. Convenient.</p>
-					<a href="#">Learn more &rarr;</a>
-				</div>
-				<div>
-					<img src="images/newyork.jpg" id="photo4" alt="New York">
-					<h4>Experience the city that never sleeps</h4>
-					<p>Over 450 flights to NYC daily</p>
-					<a href="#">Learn more &rarr;</a>
-				</div>
-				<div>
-					<img src="images/island.jpg" id="photo5" alt="Paradise">
-					<h4>Paradise is closer than you think</h4>
-					<p>Save on your next great getaway</p>
-					<a href="#">Book now &rarr;</a>
-				</div>
-				<div>
-					<img src="images/snow.png" id="photo6" alt="Holiday">
-					<h4>Plan your holiday travel</h4>
-					<p>Find last minute deals to save big!</p>
-					<a href="#">Learn more &rarr;</a>
+				<div class="photo-wrap">
+					<div>
+						<img src="images/slices/unitedgate.png" id="photo1" alt="Check In">
+						<h4>Check in to your flight online</h4>
+						<p>Save time at the gate</p>
+						<a href="#">Learn more &rarr;</a>
+					</div>
+					<div>
+						<img src="images/slices/baggage.png" id="photo2" alt="Baggage Claim">
+						<h4>Baggage Delivery</h4>
+						<p>Skip your wait at the baggage terminal</p>
+						<a href="#">Learn More &rarr;</a>
+					</div>
+					<div>
+						<img src="images/slices/unitedclub.png" id="photo3" alt="United Club">
+						<h4>Welcome to United Club</h4>
+						<p>Relaxing. Comfortable. Convenient.</p>
+						<a href="#">Learn more &rarr;</a>
+					</div>
+					<div>
+						<img src="images/newyork.jpg" id="photo4" alt="New York">
+						<h4>Experience the city that never sleeps</h4>
+						<p>Over 450 flights to NYC daily</p>
+						<a href="#">Learn more &rarr;</a>
+					</div>
+					<div>
+						<img src="images/island.jpg" id="photo5" alt="Paradise">
+						<h4>Paradise is closer than you think</h4>
+						<p>Save on your next great getaway</p>
+						<a href="#">Book now &rarr;</a>
+					</div>
+					<div>
+						<img src="images/snow.png" id="photo6" alt="Holiday">
+						<h4>Plan your holiday travel</h4>
+						<p>Find last minute deals to save big!</p>
+						<a href="#">Learn more &rarr;</a>
+					</div>
 				</div>
 			</div>
-		</div>
 			<footer>
 				<div class="container-2">
-				<img src="images/slices/footerlogo.png" alt="Logo">
-				<div class="contents">
-					<section>
-						<h3>Flight Information</h3>
-						<ul>
-							<li><a href="flightsearch.html">Book a Flight</a></li>
-							<li><a href="#">Book a Hotel</a></li>
-							<li><a href="#">Book a Car</a></li>
-							<li><a href="#">View/Change Reservation</a></li>
-							<li><a href="checkin.html">Check-in for flight</a></li>
-							<li><a href="#">Flight status/Information</a></li>
-							<li><a href="#">Baggage Information</a></li>
-						</ul>
-					</section>
-					<section>
-						<h3>About United</h3>
-						<ul>
-							<li><a href="#">Advertise with Us</a></li>
-							<li><a href="#">Branding</a></li>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">Company Profile</a></li>
-							<li><a href="#">United Shop</a></li>
-							<li><a href="#">Investor Relations</a></li>
-							<li><a href="#">Newsroom</a></li>
-						</ul>
-					</section>
-					<section>
-						<h3>Special Offers</h3>
-						<ul>
-							<li><a href="#">United Specials</a></li>
-							<li><a href="#">Email Subscriptions</a></li>
-							<li><a href="#">MileagePlus News and Offers</a></li>
-							<li><a href="#">Promotional Certificates</a></li>
-							<li><a href="#">Vacation Packages</a></li>
-							<li><a href="#">Veterans Advantage Discount</a></li>
-							<li><a href="#">RSS Subscriptions</a></li>
-						</ul>
-					</section>
+					<img src="images/slices/footerlogo.png" alt="Logo">
+					<div class="contents">
+						<section>
+							<h3>Flight Information</h3>
+							<ul>
+								<li><a href="flightsearch.html">Book a Flight</a></li>
+								<li><a href="#">Book a Hotel</a></li>
+								<li><a href="#">Book a Car</a></li>
+								<li><a href="#">View/Change Reservation</a></li>
+								<li><a href="checkin.html">Check-in for flight</a></li>
+								<li><a href="#">Flight status/Information</a></li>
+								<li><a href="#">Baggage Information</a></li>
+							</ul>
+						</section>
+						<section>
+							<h3>About United</h3>
+							<ul>
+								<li><a href="#">Advertise with Us</a></li>
+								<li><a href="#">Branding</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Company Profile</a></li>
+								<li><a href="#">United Shop</a></li>
+								<li><a href="#">Investor Relations</a></li>
+								<li><a href="#">Newsroom</a></li>
+							</ul>
+						</section>
+						<section>
+							<h3>Special Offers</h3>
+							<ul>
+								<li><a href="#">United Specials</a></li>
+								<li><a href="#">Email Subscriptions</a></li>
+								<li><a href="#">MileagePlus News and Offers</a></li>
+								<li><a href="#">Promotional Certificates</a></li>
+								<li><a href="#">Vacation Packages</a></li>
+								<li><a href="#">Veterans Advantage Discount</a></li>
+								<li><a href="#">RSS Subscriptions</a></li>
+							</ul>
+						</section>
+					</div>
 				</div>
-			</div>
 			</footer>
 		</div>
 		<script>

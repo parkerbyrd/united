@@ -14,133 +14,127 @@
 	<body>
 		<div class="container">
 			<div class="container-2">
-			<div class="small-header">
-				
-				
-				<nav class="nav-collapse top-nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="flightsearch.html">Travel Information</a></li>
-						<li><a href="checkin.html">Specials</a></li>
-						<li><a href="mileageplus.html">MileagePlus</a></li>
+				<div class="small-header">
+					
+					
+					<nav class="nav-collapse top-nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="flightsearch.html">Book a Flight</a></li>
+							<li><a href="checkin.html">Check In</a></li>
+							<li><a href="mileageplus.html">MileagePlus</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</nav>
+					<ul class="login">
+						<li><a href="#">Sign in</a></li>
+						<li><a href="#">My Account</a></li>
 						<li><a href="contact.html">Contact Us</a></li>
 					</ul>
-				</nav>
-				<ul class="login">
-					<li><a href="#">Sign in</a></li>
-					<li><a href="#">My Account</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-				</ul>
-				<img src="images/slices/logotop.png" id="toplogo" alt="logo">
-			</div>
-			
-
-
-
-			<form action="#" class="advanced-flight">
+					<img src="images/slices/logotop.png" id="toplogo" alt="logo">
+				</div>
+				
+				<form action="#" class="advanced-flight">
 					<h2>Book a Trip</h2>
-						<fieldset>
-							<legend>What kind of trip are you taking?</legend>
-							<input type="radio" name="trip">Round-Trip
-							<input type="radio" name="trip">One-Way
-							
-						</fieldset>
-						<fieldset>
-							<legend>Where and when do you plan to travel?</legend>
-							<p style="bold">Note: MileagePlus Premier members may receive better search results by <a href="mileageplus.html">signing in</a>.<br>
+					<fieldset>
+						<legend>What kind of trip are you taking?</legend>
+						<input type="radio" name="trip">Round-Trip
+						<input type="radio" name="trip">One-Way
+						
+					</fieldset>
+					<fieldset>
+						<legend>Where and when do you plan to travel?</legend>
+						<p style="bold">Note: MileagePlus Premier members may receive better search results by <a href="mileageplus.html">signing in</a>.<br>
 						<div class="advanced-from">
 							<label for="from">From</label>
 							<input type="text" name="from" id="from"><br>
-							<input type="checkbox" name="distance" value="distance" checked> Search Airports within 
+							<input type="checkbox" name="distance" value="distance" checked> Search Airports within
 							<select name="day">
-  								<option value="25">25 miles</option>
-  								<option value="50">50 miles</option>
-  								<option value="75">75 miles</option>
-  								<option value="100">100 miles</option>
-  								<option value="125">125 miles</option>
-  								<option value="150" selected>150 miles</option>
-  								<option value="175">175 miles</option>
-  								<option value="200">200 miles</option>
-  								<option value="225">225 miles</option>
-  								<option value="250">250 miles</option>
-
+								<option value="25">25 miles</option>
+								<option value="50">50 miles</option>
+								<option value="75">75 miles</option>
+								<option value="100">100 miles</option>
+								<option value="125">125 miles</option>
+								<option value="150" selected>150 miles</option>
+								<option value="175">175 miles</option>
+								<option value="200">200 miles</option>
+								<option value="225">225 miles</option>
+								<option value="250">250 miles</option>
 							</select>
 						</div>
 						<div class="advanced-to">
 							<label for="to">To</label>
 							<input type="text" name="to" id="to"><br>
-							<input type="checkbox" name="distance" value="distance"> Search Airports within 
+							<input type="checkbox" name="distance" value="distance"> Search Airports within
 							<select name="day">
-  								<option value="25">25 miles</option>
-  								<option value="50">50 miles</option>
-  								<option value="75">75 miles</option>
-  								<option value="100">100 miles</option>
-  								<option value="125">125 miles</option>
-  								<option value="150" selected>150 miles</option>
-  								<option value="175">175 miles</option>
-  								<option value="200">200 miles</option>
-  								<option value="225">225 miles</option>
-  								<option value="250">250 miles</option>
-
+								<option value="25">25 miles</option>
+								<option value="50">50 miles</option>
+								<option value="75">75 miles</option>
+								<option value="100">100 miles</option>
+								<option value="125">125 miles</option>
+								<option value="150" selected>150 miles</option>
+								<option value="175">175 miles</option>
+								<option value="200">200 miles</option>
+								<option value="225">225 miles</option>
+								<option value="250">250 miles</option>
 							</select>
 						</div>
-						</fieldset>
-						<fieldset>
-							<label>
-								<input type="radio" name="dates" value="Exact Dates"> Search specific dates
-							</label>
-							<label>
-								<input type="radio" name="dates" value="lower fares"> Search for lower fares +/- 3 Days
-							</label>
-							<label>
-								<input type="radio" name="dates" value="Flexible Dates"> My dates are flexible
-							</label>
-						</fieldset>
-						<fieldset>
-							<label for="depart">Depart Date:</label>
-							<input type="text" name="depart" id="depart">
-							<select name="Time">
-								<option value="Anytime" selected>Anytime</option>
-								<option value="Early Morning">Early Morning</option>
-								<option value="Late Morning">Late Morning</option>
-								<option value="Noon">Noon</option>
-								<option value="Early Afternoon">Early Afternoon</option>
-								<option value="Late Afternoon">Late Afternoon</option>
-								<option value="Evening">Evening</option>
-								<option value="Night">Night</option>
-								</select>
-								<label for="cabin">Depart Cabin:</label>
-							<select name="cabin" id="cabin">
-								<option value="economy" selected>Economy</option>
-								<option value="business">Business/BusinessFirst</option>
-								<option value="first">First/GlobalFirst</option>
-							</select>
-							</fieldset>
-							<fieldset>
-							
-							<label for="return">Return Date:</label>
-							<input type="text" name="return" id="return">
-							<select name="Time">
-								<option value="Anytime" selected>Anytime</option>
-								<option value="Early Morning">Early Morning</option>
-								<option value="Late Morning">Late Morning</option>
-								<option value="Noon">Noon</option>
-								<option value="Early Afternoon">Early Afternoon</option>
-								<option value="Late Afternoon">Late Afternoon</option>
-								<option value="Evening">Evening</option>
-								<option value="Night">Night</option>
-							</select>
-							<label for="cabin">Return Cabin:</label>
-							<select name="cabin" id="cabin">
-								<option value="economy" selected>Economy</option>
-								<option value="business">Business/BusinessFirst</option>
-								<option value="first">First/GlobalFirst</option>
-							</select>
-						</fieldset>
-
-						<fieldset id="people" class="advanced-people">
-							<legend>How many people are traveling with you?</legend>
-							<div class="advanced-adults">
+					</fieldset>
+					<fieldset>
+						<label>
+							<input type="radio" name="dates" value="Exact Dates"> Search specific dates
+						</label>
+						<label>
+							<input type="radio" name="dates" value="lower fares"> Search for lower fares +/- 3 Days
+						</label>
+						<label>
+							<input type="radio" name="dates" value="Flexible Dates"> My dates are flexible
+						</label>
+					</fieldset>
+					<fieldset>
+						<label for="depart">Depart Date:</label>
+						<input type="text" name="depart" id="depart">
+						<select name="Time">
+							<option value="Anytime" selected>Anytime</option>
+							<option value="Early Morning">Early Morning</option>
+							<option value="Late Morning">Late Morning</option>
+							<option value="Noon">Noon</option>
+							<option value="Early Afternoon">Early Afternoon</option>
+							<option value="Late Afternoon">Late Afternoon</option>
+							<option value="Evening">Evening</option>
+							<option value="Night">Night</option>
+						</select>
+						<label for="cabin">Depart Cabin:</label>
+						<select name="cabin" id="cabin">
+							<option value="economy" selected>Economy</option>
+							<option value="business">Business/BusinessFirst</option>
+							<option value="first">First/GlobalFirst</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						
+						<label for="return">Return Date:</label>
+						<input type="text" name="return" id="return">
+						<select name="Time">
+							<option value="Anytime" selected>Anytime</option>
+							<option value="Early Morning">Early Morning</option>
+							<option value="Late Morning">Late Morning</option>
+							<option value="Noon">Noon</option>
+							<option value="Early Afternoon">Early Afternoon</option>
+							<option value="Late Afternoon">Late Afternoon</option>
+							<option value="Evening">Evening</option>
+							<option value="Night">Night</option>
+						</select>
+						<label for="cabin">Return Cabin:</label>
+						<select name="cabin" id="cabin">
+							<option value="economy" selected>Economy</option>
+							<option value="business">Business/BusinessFirst</option>
+							<option value="first">First/GlobalFirst</option>
+						</select>
+					</fieldset>
+					<fieldset id="people" class="advanced-people">
+						<legend>How many people are traveling with you?</legend>
+						<div class="advanced-adults">
 							<label for="adults">Adults (age 18 to 64):</label>
 							<select id="adults">
 								<option value="0">0</option>
@@ -209,102 +203,83 @@
 								<option value="5">5</option>
 							</select>
 						</div>
-						</fieldset>
-						<fieldset class="advanced-fare">
-							<legend>What is your fare preference?</legend>
-							<label>Fare Type:</label><br>
-							<input type="radio" name="fare" value="lowest">Lowest Available Fare<br>
-							<input type="radio" name="fare" value="flexible">Flexible Fare<br>
-							<input type="radio" name="fare" value="unrestricted">Unrestricted Fare
-
-		
-
-						</fieldset>
-						<fieldset class="advanced-offer">
-							<legend>(Optional) Do you have any promotional offers to redeem?</legend>
-							<label for="offer">Offer Code (optional)</label>
-							<input type="text" name="offer" id="offer">
-						</fieldset>
+					</fieldset>
+					<fieldset class="advanced-fare">
+						<legend>What is your fare preference?</legend>
+						<label>Fare Type:</label><br>
+						<input type="radio" name="fare" value="lowest">Lowest Available Fare<br>
+						<input type="radio" name="fare" value="flexible">Flexible Fare<br>
+						<input type="radio" name="fare" value="unrestricted">Unrestricted Fare
 						
-						<fieldset>
-							<legend>How would you like your flight results displayed?</legend>
-							<input type="checkbox" name="display"> Nonstop flights only
-							<input type="checkbox" name="display"> United Airlines flights only
-							<input type="checkbox" name="display"> MileagePlus upgrade award
-
-							<label for="search">Search by:</label>
-							<select name="search" id="search">
-								<option value="price">Price</option>
-								<option value="schedule">Schedule</option>
-								<option value="award">Award Travel</option>
-							</select>
-						</fieldset>
-						<fieldset>
-							<input type="checkbox" value="nonstop">Non-stop flights only
-						</fieldset>
-						<fieldset>
-							<input type="submit" name="search" value="Search">
-						</fieldset>
-					</form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
+					</fieldset>
+					<fieldset class="advanced-offer">
+						<legend>(Optional) Do you have any promotional offers to redeem?</legend>
+						<label for="offer">Offer Code (optional)</label>
+						<input type="text" name="offer" id="offer">
+					</fieldset>
+					
+					<fieldset>
+						<legend>How would you like your flight results displayed?</legend>
+						<input type="checkbox" name="display"> Nonstop flights only
+						<input type="checkbox" name="display"> United Airlines flights only
+						<input type="checkbox" name="display"> MileagePlus upgrade award
+						<label for="search">Search by:</label>
+						<select name="search" id="search">
+							<option value="price">Price</option>
+							<option value="schedule">Schedule</option>
+							<option value="award">Award Travel</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<input type="checkbox" value="nonstop">Non-stop flights only
+					</fieldset>
+					<fieldset>
+						<input type="submit" name="search" value="Search">
+					</fieldset>
+				</form>
+			</div>
 			<footer>
 				<div class="container-2">
-				<img src="images/slices/footerlogo.png" alt="Logo">
-				<div class="contents">
-					<section>
-						<h3>Flight Information</h3>
-						<ul>
-							<li><a href="flightsearch.html">Book a Flight</a></li>
-							<li><a href="#">Book a Hotel</a></li>
-							<li><a href="#">Book a Car</a></li>
-							<li><a href="#">View/Change Reservation</a></li>
-							<li><a href="checkin.html">Check-in for flight</a></li>
-							<li><a href="#">Flight status/Information</a></li>
-							<li><a href="#">Baggage Information</a></li>
-						</ul>
-					</section>
-					<section>
-						<h3>About United</h3>
-						<ul>
-							<li><a href="#">Advertise with Us</a></li>
-							<li><a href="#">Branding</a></li>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">Company Profile</a></li>
-							<li><a href="#">United Shop</a></li>
-							<li><a href="#">Investor Relations</a></li>
-							<li><a href="#">Newsroom</a></li>
-						</ul>
-					</section>
-					<section>
-						<h3>Special Offers</h3>
-						<ul>
-							<li><a href="#">United Specials</a></li>
-							<li><a href="#">Email Subscriptions</a></li>
-							<li><a href="#">MileagePlus News and Offers</a></li>
-							<li><a href="#">Promotional Certificates</a></li>
-							<li><a href="#">Vacation Packages</a></li>
-							<li><a href="#">Veterans Advantage Discount</a></li>
-							<li><a href="#">RSS Subscriptions</a></li>
-						</ul>
-					</section>
+					<img src="images/slices/footerlogo.png" alt="Logo">
+					<div class="contents">
+						<section>
+							<h3>Flight Information</h3>
+							<ul>
+								<li><a href="flightsearch.html">Book a Flight</a></li>
+								<li><a href="#">Book a Hotel</a></li>
+								<li><a href="#">Book a Car</a></li>
+								<li><a href="#">View/Change Reservation</a></li>
+								<li><a href="checkin.html">Check-in for flight</a></li>
+								<li><a href="#">Flight status/Information</a></li>
+								<li><a href="#">Baggage Information</a></li>
+							</ul>
+						</section>
+						<section>
+							<h3>About United</h3>
+							<ul>
+								<li><a href="#">Advertise with Us</a></li>
+								<li><a href="#">Branding</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Company Profile</a></li>
+								<li><a href="#">United Shop</a></li>
+								<li><a href="#">Investor Relations</a></li>
+								<li><a href="#">Newsroom</a></li>
+							</ul>
+						</section>
+						<section>
+							<h3>Special Offers</h3>
+							<ul>
+								<li><a href="#">United Specials</a></li>
+								<li><a href="#">Email Subscriptions</a></li>
+								<li><a href="#">MileagePlus News and Offers</a></li>
+								<li><a href="#">Promotional Certificates</a></li>
+								<li><a href="#">Vacation Packages</a></li>
+								<li><a href="#">Veterans Advantage Discount</a></li>
+								<li><a href="#">RSS Subscriptions</a></li>
+							</ul>
+						</section>
+					</div>
 				</div>
-			</div>
 			</footer>
 		</div>
 		<script>
